@@ -1,0 +1,360 @@
+\documentclass[11pt,a4paper]{article}
+
+%--- Encodage & langue ---
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[french,english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+
+%--- Mise en page ---
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage{setspace}
+\setstretch{1.08}
+
+%--- Couleurs & liens ---
+\usepackage{xcolor}
+\definecolor{main}{HTML}{0A6CF1}
+\definecolor{accent}{HTML}{FF6B6B}
+\definecolor{soft}{gray}{0.15}
+\usepackage[
+  colorlinks=true,
+  linkcolor=main,
+  urlcolor=main,
+  citecolor=main
+]{hyperref}
+
+%--- Listes propres ---
+\usepackage{enumitem}
+\setlist[itemize]{topsep=2pt,itemsep=2pt,parsep=0pt}
+\setlist[enumerate]{topsep=2pt,itemsep=2pt,parsep=0pt}
+
+%--- Boîtes et encadrés ---
+\usepackage[most]{tcolorbox}
+\tcbset{sharp corners, boxrule=0.4pt, colframe=main!70!black, colback=main!3}
+
+% Styles de boîtes
+\newtcolorbox{RuleBox}{colframe=main!80!black, colback=main!3, title=\textbf{Règle}}
+\newtcolorbox{TipBox}{colframe=green!50!black, colback=green!5, title=\textbf{Conseil}}
+\newtcolorbox{WarnBox}{colframe=accent!80!black, colback=accent!5, title=\textbf{À éviter}}
+\newtcolorbox{ExampleBox}{colframe=soft, colback=black!3, title=\textbf{Exemples}}
+
+%--- Tableaux ---
+\usepackage{booktabs}
+\usepackage{bookmark}
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+\newcounter{rownum}
+\newcommand{\resetrownum}{\setcounter{rownum}{0}}
+\newcommand{\rownumber}{\stepcounter{rownum}\arabic{rownum}}
+
+%--- Commandes utiles ---
+\newcommand{\Rule}[1]{\begin{RuleBox}#1\end{RuleBox}}
+\newcommand{\Tip}[1]{\begin{TipBox}#1\end{TipBox}}
+\newcommand{\Warn}[1]{\begin{WarnBox}#1\end{WarnBox}}
+\newcommand{\Exemples}[1]{\begin{ExampleBox}#1\end{ExampleBox}}
+
+%--- Titre ---
+\title{\vspace{-1.5em}\textbf{Préparation TOEIC}\\
+\large Grammaire \;|\; Vocabulaire \;|\; Conseils pratiques \;|\; Tips Toeic}
+\author{%
+Mohamed Lemine Mohamed Ahmed \\
+\small \href{mailto:prenom.nom@email.com}{mhmdahmdnbyl18@gmail.com}
+}
+\date{\small \today}
+
+\begin{document}
+\selectlanguage{french}
+\maketitle
+\vspace{-1em}
+\hrule
+\vspace{0.8em}
+
+\tableofcontents
+\newpage
+
+
+%========================
+\section{Grammaire essentielle}
+%========================
+
+\subsection{Tenses}
+
+\subsubsection{Present simple}
+
+
+\subsubsection*{a. Formulation}
+
+\paragraph{Affirmative form}
+\begin{itemize}
+  \item \textbf{I / You / We / They} + \textit{base verb}  
+  \textit{Example:} I work every day.
+  \item \textbf{He / She / It} + \textit{verb + s / es}  
+  \textit{Example:} She works in a bank.
+\end{itemize}
+
+\paragraph{Negative form}
+\begin{itemize}
+  \item \textbf{I / You / We / They} + \textit{do not (don’t) + base verb}  
+  \textit{Example:} They don’t like coffee.
+  \item \textbf{He / She / It} + \textit{does not (doesn’t) + base verb}  
+  \textit{Example:} He doesn’t play football.
+\end{itemize}
+
+\paragraph{Interrogative form}
+\begin{itemize}
+  \item \textbf{Do} + \textit{I / you / we / they} + \textit{base verb} ?  
+  \textit{Example:} Do you speak English?
+  \item \textbf{Does} + \textit{he / she / it} + \textit{base verb} ?  
+  \textit{Example:} Does she study French?
+\end{itemize}
+
+\subsubsection*{b. The verbs \textit{to be} and \textit{to have}}
+
+\paragraph{To be}
+\begin{itemize}
+  \item \textbf{Affirmative:} I am / You are / He-She-It is / We are / They are  
+  \textit{Example:} She is a teacher.
+  \item \textbf{Negative:} I am not / You aren’t / He isn’t / etc.  
+  \textit{Example:} They aren’t tired.
+  \item \textbf{Interrogative:} Am I...? / Are you...? / Is he...?  
+  \textit{Example:} Are you ready?
+\end{itemize}
+
+\paragraph{To have}
+\begin{itemize}
+  \item \textbf{Affirmative:} I/You/We/They have – He/She/It has  
+  \textit{Example:} He has a car.
+  \item \textbf{Negative:} I/You/We/They don’t have – He/She/It doesn’t have  
+  \textit{Example:} She doesn’t have time.
+  \item \textbf{Interrogative:} Do you have...? / Does he have...?  
+  \textit{Example:} Do they have children?
+\end{itemize}
+
+\subsection*{c. Uses of the Present Simple}
+
+\begin{itemize}
+  \item \textbf{General facts and situations:}  
+  \textit{Example:} The sun rises in the east.
+  \item \textbf{Regular actions and routines:}  
+  \textit{Example:} I go to the gym on Mondays.
+  \item \textbf{With adverbs of frequency:} always, usually, often, sometimes, rarely, never.  
+  \textit{Example:} She always drinks tea in the morning.
+  \item \textbf{Universal or scientific truths:}  
+  \textit{Example:} Water boils at 100°C.
+  \item \textbf{Timetables and scheduled events:}  
+  \textit{Example:} The train leaves at 9 a.m.
+\end{itemize}
+
+
+\subsubsection{Present Continuous (Progressive)}
+
+
+\subsubsection*{a. Formulation}
+
+\paragraph{Structure}
+\[
+\text{Subject} + \text{to be (am / is / are)} + \text{verb} + \text{-ing}
+\]
+
+\textbf{Examples:}
+\begin{itemize}
+  \item I am studying English.
+  \item She is watching TV.
+  \item They are working on a new project.
+\end{itemize}
+
+\paragraph{Negative form}
+\[
+\text{Subject} + \text{am / is / are not} + \text{verb} + \text{-ing}
+\]
+\textit{Examples:}  
+He isn’t listening. / We aren’t playing football.
+
+\paragraph{Interrogative form}
+\[
+\text{Am / Is / Are} + \text{subject} + \text{verb} + \text{-ing} \, ?
+\]
+\textit{Examples:}  
+Are you coming? / Is she reading now?
+
+\subsubsection*{b. Uses of the Present Continuous}
+
+\begin{itemize}
+  \item \textbf{Actions happening now:}  
+  \textit{Example:} She is talking on the phone right now.
+  \item \textbf{Ongoing projects or activities:}  
+  \textit{Example:} We are building a new website this month.
+  \item \textbf{Temporary situations:}  
+  \textit{Example:} I am living with my parents for a few weeks.
+  \item \textbf{Changing or developing situations (trends, evolution):}  
+  \textit{Example:} The climate is getting warmer.
+  \item \textbf{Future plans or arrangements (near future):}  
+  \textit{Example:} I’m meeting her soon.
+\end{itemize}
+
+\subsubsection*{c. TOEIC Tips}
+
+\subsubsection*{- With time adverbs}
+
+The Present Continuous is almost always used with time adverbs.
+
+\textbf{Common time adverbs:}  
+currently, at the moment, this year, this week, today, still, these days, now, meanwhile, right now.
+
+\textbf{Examples:}
+\begin{itemize}
+  \item She is studying for her exams at the moment.
+  \item We are planning a trip to Japan this year.
+  \item He is still working on the project right now.
+\end{itemize}
+
+\subsubsection*{- With \textit{always} to express criticism}
+
+Normally, \textit{always} is used with the Present Simple.  
+However, when expressing irritation, annoyance, or a negative emotion, we use the Present Continuous.
+
+\textbf{Examples:}
+\begin{itemize}
+  \item He always loses his keys. \hfill (Present Simple — it’s habitual)
+  \item He is always losing his keys! \hfill (Present Continuous — it’s annoying!)
+\end{itemize}
+
+
+\subsubsection{Present Perfect Simple}
+
+
+
+\subsection{Nouns : }
+
+Nouns
+
+
+\subsection{Tips for TOEIC}
+
+
+
+\begin{table}[h]
+\centering
+\resetrownum
+\begin{tabular}{@{}p{0.5cm} p{4cm} p{6.5cm} p{6.5cm}@{}}
+\toprule
+\text{Num} & \textbf{Word / Structure} & \textbf{Definition } & \textbf{Example} \\
+\midrule
+\rownumber & \textit{under which} & on utilise \textbf{under which} pour parler d'une règle ou loi & 
+The policy \textbf{under which} refunds are processed has changed. \\
+\midrule
+\rownumber & \textit{prefer + V-ing + to + V-ing} & Compare two activities / preferences & 
+I prefer \textbf{reading} reports to \textbf{attending} long meetings. \\
+\midrule
+\rownumber & \textit{has/have been + past participle} & Present perfect passive: past action with a present result & 
+The contract \textbf{has been signed}. \\
+\midrule
+\rownumber & \textit{delighted with} & Pleased/very happy about something &
+The client was \textbf{delighted with} the results. \\
+\midrule
+\rownumber & \textit{jewellery} (uncountable) & Uncountable noun; no plural *jewelleries*; verb takes singular &
+Her \textbf{jewellery is} expensive. \\
+\midrule
+\rownumber & \textit{once} + present simple & Use present simple after “once” even for future reference &
+\textbf{Once he arrives}, we will start. \\
+\midrule
+\rownumber & \textit{could} (possibility) & Express possibility/conditional suggestion &
+If we had more time, we \textbf{could} expand the study. \\
+\midrule
+\rownumber & \textit{object to} + N / V-ing & “Object” always with \textit{to}; if a verb follows, use -ing &
+They objected \textbf{to} the proposal / \textbf{to working} late. \\
+\midrule
+\rownumber & \textit{be keen on} + N/V-ing; \textit{keen to} + V & Enthusiasm/interest (\textit{keen on}); willingness/intent (\textit{keen to}) &
+She is \textbf{keen on learning} Python; she is \textbf{keen to learn} Python. \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+
+%========================
+\section{Vocabulaire \& collocations}
+%========================
+\begin{center}
+\begin{tabular}{@{}L{4.5cm} L{10cm}@{}}
+\toprule
+\textbf{Expression} & \textbf{Exemple TOEIC} \\
+\midrule
+meet a deadline & We must \textbf{meet the deadline} by Friday. \\
+make a decision & Management will \textbf{make a decision} tomorrow. \\
+apply for a position & She \textbf{applied for} the marketing position. \\
+be responsible for & He is \textbf{responsible for} quality control. \\
+in accordance with & The policy is \textbf{in accordance with} regulations. \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+%========================
+\section{Contractions \& connecteurs}
+%========================
+
+\subsection*{Contractions fréquentes (écoute TOEIC)}
+\begin{center}
+\begin{tabular}{@{}L{5cm} L{9.5cm}@{}}
+\toprule
+\textbf{Forme} & \textbf{Exemple} \\
+\midrule
+I'm, you're, he's, we're, they're & \textit{They're ready for the call.} \\
+don't, doesn't, didn't & \textit{She doesn't agree.} \\
+I'll, you'll, we'll, they'll & \textit{I'll send the report.} \\
+can't, won't, shouldn't, couldn't & \textit{We can't attend today.} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection*{Connecteurs logiques (écrit/oral)}
+\begin{itemize}
+  \item \textbf{Therefore, consequently}: conséquence \;—\; \textit{It was delayed; therefore, we rescheduled.}
+  \item \textbf{However, nevertheless}: opposition \;—\; \textit{Expensive; however, effective.}
+  \item \textbf{Moreover, in addition}: addition \;—\; \textit{Moreover, we reduced costs.}
+\end{itemize}
+
+%========================
+\section{Conseils d’examen \& stratégies}
+%========================
+\Tip{
+\textbf{Timing}: ne t’attarde pas — 1 question difficile = passe et reviens plus tard. \\
+\textbf{Listening}: anticipe le contexte (lieu, rôle, objectif) avant l’audio. \\
+\textbf{Reading}: lis d’abord les questions, puis le texte (gain de temps). \\
+\textbf{Grammaire}: repère les indices (prépositions fixes, structure des temps). \\
+\textbf{Vocabulaire}: privilégie collocations et expressions métiers.
+}
+
+\Warn{
+Évite de sur-analyser. Les distracteurs typiques au TOEIC : synonymes proches, négations cachées, dates/chiffres piégés.
+}
+
+%========================
+\section{Mini-fiches \& pièges classiques}
+%========================
+\begin{itemize}
+  \item \textbf{After / before / once / when} + présent simple pour futur proche.
+  \item \textbf{Depend on}, \textbf{insist on}, \textbf{apologize for}, \textbf{object to}.
+  \item \textbf{Few} (peu, négatif) vs \textbf{a few} (quelques, positif).
+  \item \textbf{Since} (point de départ) vs \textbf{for} (durée).
+\end{itemize}
+
+% %========================
+% \section{Checklist de révision rapide}
+% %========================
+% \begin{itemize}
+%   \item[{\large $\square$}] 20 collocations métier révisées
+%   \item[{\large $\square$}] 15 connecteurs logiques maîtrisés
+%   \item[{\large $\square$}] 10 pièges de grammaire cochés
+%   \item[{\large $\square$}] 2 tests blancs chronométrés
+% \end{itemize}
+
+
+\vfill
+\begin{center}
+\small \textit{Dernière mise à jour : \today \;—\; Ce document est un mémo de révision TOEIC.}
+\end{center}
+
+\end{document}

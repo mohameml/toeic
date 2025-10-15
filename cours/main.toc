@@ -1,0 +1,21 @@
+\babel@toc {english}{}\relax 
+\babel@toc {french}{}\relax 
+\contentsline {section}{\numberline {1}Grammaire essentielle}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Tenses}{2}{subsection.1.1}%
+\contentsline {subsubsection}{\numberline {1.1.1}Present simple}{2}{subsubsection.1.1.1}%
+\contentsline {paragraph}{Affirmative form}{2}{section*.3}%
+\contentsline {paragraph}{Negative form}{2}{section*.4}%
+\contentsline {paragraph}{Interrogative form}{2}{section*.5}%
+\contentsline {paragraph}{To be}{2}{section*.7}%
+\contentsline {paragraph}{To have}{2}{section*.8}%
+\contentsline {subsubsection}{\numberline {1.1.2}Present Continuous (Progressive)}{2}{subsubsection.1.1.2}%
+\contentsline {paragraph}{Structure}{2}{section*.11}%
+\contentsline {paragraph}{Negative form}{3}{section*.12}%
+\contentsline {paragraph}{Interrogative form}{3}{section*.13}%
+\contentsline {subsubsection}{\numberline {1.1.3}Present Perfect Simple}{3}{subsubsection.1.1.3}%
+\contentsline {subsection}{\numberline {1.2}Nouns : }{3}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}Tips for TOEIC}{4}{subsection.1.3}%
+\contentsline {section}{\numberline {2}Vocabulaire \& collocations}{4}{section.2}%
+\contentsline {section}{\numberline {3}Contractions \& connecteurs}{4}{section.3}%
+\contentsline {section}{\numberline {4}Conseils d’examen \& stratégies}{5}{section.4}%
+\contentsline {section}{\numberline {5}Mini-fiches \& pièges classiques}{5}{section.5}%

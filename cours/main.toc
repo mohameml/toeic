@@ -1,21 +1,49 @@
-\babel@toc {english}{}\relax 
-\babel@toc {french}{}\relax 
-\contentsline {section}{\numberline {1}Grammaire essentielle}{2}{section.1}%
-\contentsline {subsection}{\numberline {1.1}Tenses}{2}{subsection.1.1}%
-\contentsline {subsubsection}{\numberline {1.1.1}Present simple}{2}{subsubsection.1.1.1}%
-\contentsline {paragraph}{Affirmative form}{2}{section*.3}%
-\contentsline {paragraph}{Negative form}{2}{section*.4}%
-\contentsline {paragraph}{Interrogative form}{2}{section*.5}%
-\contentsline {paragraph}{To be}{2}{section*.7}%
-\contentsline {paragraph}{To have}{2}{section*.8}%
-\contentsline {subsubsection}{\numberline {1.1.2}Present Continuous (Progressive)}{2}{subsubsection.1.1.2}%
-\contentsline {paragraph}{Structure}{2}{section*.11}%
-\contentsline {paragraph}{Negative form}{3}{section*.12}%
-\contentsline {paragraph}{Interrogative form}{3}{section*.13}%
-\contentsline {subsubsection}{\numberline {1.1.3}Present Perfect Simple}{3}{subsubsection.1.1.3}%
-\contentsline {subsection}{\numberline {1.2}Nouns : }{3}{subsection.1.2}%
-\contentsline {subsection}{\numberline {1.3}Tips for TOEIC}{4}{subsection.1.3}%
-\contentsline {section}{\numberline {2}Vocabulaire \& collocations}{4}{section.2}%
-\contentsline {section}{\numberline {3}Contractions \& connecteurs}{4}{section.3}%
-\contentsline {section}{\numberline {4}Conseils d’examen \& stratégies}{5}{section.4}%
-\contentsline {section}{\numberline {5}Mini-fiches \& pièges classiques}{5}{section.5}%
+\selectlanguage *{english}
+\selectlanguage *{english}
+\contentsline {chapter}{\numberline {1}Parts of Speech}{5}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Nouns }{5}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Countable \& Uncountable Nouns}{6}{section.1.2}%
+\contentsline {paragraph}{Frequent TOEIC examples:}{6}{section*.7}%
+\contentsline {paragraph}{Frequent TOEIC examples:}{6}{section*.9}%
+\contentsline {chapter}{\numberline {2}Tenses }{8}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Present simple}{8}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Present Continuous (Progressive)}{9}{section.2.2}%
+\contentsline {paragraph}{Structure}{9}{section*.20}%
+\contentsline {paragraph}{Negative form}{9}{section*.21}%
+\contentsline {paragraph}{Interrogative form}{10}{section*.22}%
+\contentsline {section}{\numberline {2.3}Present Perfect Simple}{10}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Present Perfect Continuous}{11}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Past Simple}{12}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Past Continuous}{14}{section.2.6}%
+\contentsline {section}{\numberline {2.7}Past Perfect}{15}{section.2.7}%
+\contentsline {section}{\numberline {2.8}Past Perfect Continuous}{16}{section.2.8}%
+\contentsline {chapter}{\numberline {3}Comparison of Adjectives}{18}{chapter.3}%
+\contentsline {chapter}{\numberline {4}Conditions:}{19}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Difference between \textbf {GOING TO} and \textbf {WILL}}{20}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Pronouns}{22}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Relative Pronouns}{22}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Linking words}{23}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Clauses of Result}{25}{section.6.3}%
+\contentsline {chapter}{\numberline {7}Modals}{27}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Modal Verbs}{27}{section.7.1}%
+\contentsline {chapter}{\numberline {8}Passive voice}{29}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Passive voice}{29}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Reported Speech}{30}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Reported Questions}{32}{section.8.3}%
+\contentsline {paragraph}{Remark. Indirect Questions (Embedded Questions).}{33}{section*.83}%
+\contentsline {chapter}{\numberline {9}Causative}{34}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Causative Verbs}{34}{section.9.1}%
+\contentsline {chapter}{\numberline {10}Subjunctive Mood}{36}{chapter.10}%
+\contentsline {chapter}{\numberline {11}Negation}{38}{chapter.11}%
+\contentsline {chapter}{\numberline {12}TOEIC Exam Structure}{41}{chapter.12}%
+\contentsline {section}{\numberline {12.1}Part 1 : Photographs [Questions 1-10]}{41}{section.12.1}%
+\contentsline {section}{\numberline {12.2}Part 2 : Question-Response [Questions 11–40]}{41}{section.12.2}%
+\contentsline {section}{\numberline {12.3}Part 3 : Conversations [Questions 41–70]}{42}{section.12.3}%
+\contentsline {section}{\numberline {12.4}Part 4 : Talks [Questions 71–100]}{43}{section.12.4}%
+\contentsline {section}{\numberline {12.5}Part 5 : Incomplete Sentences [Questions 101–130]}{44}{section.12.5}%
+\contentsline {section}{\numberline {12.6}Part 6 : Text Completion [Questions 131–146]}{45}{section.12.6}%
+\contentsline {section}{\numberline {12.7}Part 7 : Reading Comprehension [Questions 147–200]}{46}{section.12.7}%
+\contentsline {chapter}{\numberline {13}Tips for TOEIC}{49}{chapter.13}%
+\contentsline {section}{\numberline {13.1}Common Erros in Part 5}{49}{section.13.1}%
+\contentsline {chapter}{\numberline {14}Vocabulaire \& collocations}{52}{chapter.14}%
+\contentsline {section}{\numberline {14.1}Contractions \& connecteurs}{52}{section.14.1}%

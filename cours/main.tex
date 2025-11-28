@@ -1,7 +1,9 @@
-\documentclass[11pt,a4paper]{article}
+\documentclass[11pt,a4paper]{report}
 
 %--- Encodage & langue ---
 \usepackage[T1]{fontenc}
+% \usepackage{fontspec}   % pour gérer les polices Unicode
+
 \usepackage[utf8]{inputenc}
 \usepackage[french,english]{babel}
 \usepackage{lmodern}
@@ -24,6 +26,8 @@
   citecolor=main
 ]{hyperref}
 
+
+
 %--- Listes propres ---
 \usepackage{enumitem}
 \setlist[itemize]{topsep=2pt,itemsep=2pt,parsep=0pt}
@@ -45,6 +49,14 @@
 \usepackage{array}
 \newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
 
+\usepackage{longtable}
+
+\usepackage{polyglossia} % pour la gestion des langues
+\setmainlanguage{english} % langue principale
+\setotherlanguage{arabic} % ajouter l'arabe
+\newfontfamily\arabicfont[Script=Arabic]{Amiri} % ou une autre police arabe installée
+
+
 \newcounter{rownum}
 \newcommand{\resetrownum}{\setcounter{rownum}{0}}
 \newcommand{\rownumber}{\stepcounter{rownum}\arabic{rownum}}
@@ -65,7 +77,7 @@ Mohamed Lemine Mohamed Ahmed \\
 \date{\small \today}
 
 \begin{document}
-\selectlanguage{french}
+% \selectlanguage{french}
 \maketitle
 \vspace{-1em}
 \hrule
@@ -76,82 +88,268 @@ Mohamed Lemine Mohamed Ahmed \\
 
 
 %========================
-\section{Grammaire essentielle}
+% Grammaire 
 %========================
 
-\subsection{Tenses}
 
-\subsubsection{Present simple}
+\begin{center}
+    {\Huge \textbf{Grammaire essentielle}}\\[6pt]
+    \hrule
+\end{center}
+
+\vspace{1em}
 
 
-\subsubsection*{a. Formulation}
+% ========= chapitre : Parts of Speech ================
 
-\paragraph{Affirmative form}
+\chapter{Parts of Speech}
+
+\section{Nouns }
+
+
+\subsection*{a. Definition}
+
+Nouns are the names of people, places, and things.
+
+\noindent
+\textbf{Common Suffixes :}
+\vspace{0.5cm}
+
+\begin{tabular}{l l l}
+\textbf{Suffix} & \textbf{Meaning} & \textbf{Example} \\
+\hline
+-ness & state, condition & happiness, kindness \\
+-dom & state, domain & freedom, kingdom \\
+-hood & state, group & adulthood, neighbourhood \\
+-ship & relationship, state & friendship, internship \\
+\end{tabular}
+
+\subsection*{b. Singular \& Plural Rules}
+\begin{tabular}{l l l}
+\textbf{Rule} & \textbf{Singular} & \textbf{Plural} \\
+\hline
+Add -s & car & cars \\
+Ends in s, ss, x, sh, ch $\rightarrow$ +es & watch & watches \\
+Consonant + y $\rightarrow$ ies & baby & babies \\
+Vowel + y $\rightarrow$ +s & boy & boys \\
+Ends in o $\rightarrow$ +es & potato & potatoes \\
+Ends in o $\rightarrow$ +s & radio & radios \\
+Ends in f/fe $\rightarrow$ ves/s & shelf & shelves \\
+Irregular & man & men \\
+Irregular & child & children \\
+Irregular & mouse & mice \\
+\end{tabular}
+
+
+\subsection*{c. Articles }
+
+\textbf{Definition :}
+
+Articles are small words placed before nouns to show whether the noun is general or specific. They help indicate if we are talking about any member of a group (a, an) or a particular one that is already known to the listener (the)
+
+\vspace{0.5cm}
+
+
+\begin{tabular}{l l l}
+\textbf{Article} & \textbf{Use} & \textbf{Example} \\
+\hline
+a & Before singular countable nouns starting with a consonant & a dog, a sandwich \\
+an & Before singular countable nouns starting with a vowel & an orange, an apple \\
+the & Specific noun (singular or plural, countable or uncountable) & the book, the books, the water \\
+\end{tabular}
+
+
+
+\subsection*{d. Demonstratives}
+
+\textbf{Definition :}
+
+Demonstratives are words used to point to specific people, things, or places. They show whether something is near or far and whether it is singular or plural.
+The main demonstratives in English are: this, that, these, those.
+
+\vspace{0.5cm}
+
+\begin{tabular}{l l l}
+\textbf{Word} & \textbf{Use} & \textbf{Example} \\
+\hline
+this & Singular, near the speaker & this book \\
+that & Singular, far from the speaker & that car \\
+these & Plural, near the speaker & these apples \\
+those & Plural, far from the speaker & those houses \\
+\end{tabular}
+
+
+
+
+\section{Countable \& Uncountable Nouns}
+
+\subsection*{a. Countable nouns}
+Countable nouns are nouns that can be \emph{counted} as individual units. They normally have both singular and plural forms, and can be used with numbers and the indefinite articles \textit{a}/\textit{an}.
+
+
+\paragraph{Frequent TOEIC examples:}
 \begin{itemize}
-  \item \textbf{I / You / We / They} + \textit{base verb}  
-  \textit{Example:} I work every day.
-  \item \textbf{He / She / It} + \textit{verb + s / es}  
-  \textit{Example:} She works in a bank.
+  \item \textbf{job / jobs}, \textbf{report / reports}, \textbf{meeting / meetings}
+  \item \textbf{customer / customers}, \textbf{product / products}
+  \item \textbf{employee / employees}, \textbf{task / tasks}, \textbf{problem / problems}
 \end{itemize}
 
-\paragraph{Negative form}
+\subsection*{b. Uncountable nouns}
+Uncountable nouns  are nouns that cannot be counted as separate individual units without a unit/measure word. They normally do not have a plural form and cannot directly take \textit{a}/\textit{an}.
+
+
+\paragraph{Frequent TOEIC examples:}
 \begin{itemize}
-  \item \textbf{I / You / We / They} + \textit{do not (don’t) + base verb}  
-  \textit{Example:} They don’t like coffee.
-  \item \textbf{He / She / It} + \textit{does not (doesn’t) + base verb}  
-  \textit{Example:} He doesn’t play football.
+  \item \textbf{information}, \textbf{advice}, \textbf{equipment} , \textbf{news}
+  \item \textbf{money}, \textbf{luggage}, \textbf{research}
+  \item \textbf{traffic}, \textbf{software}, \textbf{work}
+  \item \textbf{furniture}
 \end{itemize}
 
-\paragraph{Interrogative form}
+\subsection*{c. Quantifiers}
+
+\subsubsection*{Definition :}
+Quantifiers are words that express quantity. Some quantifiers are used with \emph{countable} nouns, some with \emph{uncountable} nouns, and some with both. 
+
+
+
+\subsubsection*{Table of quantifiers :}
+
+\vspace{0.5em}
+\begin{tabular}{@{} l p{5cm} p{7.5cm} @{}}
+\toprule
+\textbf{Quantifier} & \textbf{Use} & \textbf{Example } \\
+\midrule
+many      & Countable & \textit{There are many customers waiting at reception.} \\
+few       & Countable & \textit{Few applicants met the job requirements.} \\
+a few     & Countable & \textit{I need a few minutes to finish the report.} \\
+\hline
+much      & Uncountable & \textit{We don’t have much time before the deadline.} \\
+little    & Uncountable & \textit{There is little evidence to support the claim.} \\
+a little  & Uncountable & \textit{We have a little information about the client.} \\
+\hline
+a lot of  & Countable \& Uncountable &  \textit{A lot of traffic delayed the shipment.} \\
+some      & Countable \& Uncountable  &  \textit{Would you like some coffee?} \\
+any       & Countable \& Uncountable  &  \textit{We don’t have any equipment available.} \\
+\bottomrule
+\end{tabular}
+
+
+
+% ============ chapitre Tenses : =================
+\chapter{Tenses }
+
+
+\section{Present simple}
+
+
+
+\subsection*{a. Formulation}
+
+
+\[
+\left\{
+\begin{array}{ll}
+\textbf{Affirmative:} & \text{Sujet + base verbale (+ s à la 3\textsuperscript{e} personne)} \\[6pt]
+\textbf{Negative:} & \text{Sujet + do/does + not + base verbale} \\[6pt]
+\textbf{Interrogative:} & \text{Do/Does + sujet + base verbale ?}
+\end{array}
+\right.
+\]
+
+
+\vspace{0.5em}
+\textbf{Example :  to work }
+\begin{center}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{l|l|l|l}
+\toprule
+\textbf{Pronom} & \textbf{Affirmative} & \textbf{Négative} & \textbf{Interrogative} \\
+\midrule
+I & I work & I do not (don’t) work & Do I work? \\
+You & You work & You don’t work & Do you work? \\
+He/She/It & He works & He doesn’t work & Does he work? \\
+We & We work & We don’t work & Do we work? \\
+You & You work & You don’t work & Do you work? \\
+They & They work & They don’t work & Do they work? \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+
+\subsection*{b. Uses Cases}
+
+
+\begin{center}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{p{6cm}|p{6cm}|p{5cm}}
+\toprule
+\textbf{Use Case} & \textbf{Explanation} & \textbf{Example} \\
+\midrule
+\textbf{General facts and situations} & Describes facts that are always true. & \textit{The sun rises in the east.} \\
+\textbf{Regular actions and routines} & Describes actions that happen regularly. & \textit{I go to the gym on Mondays.} \\
+\textbf{With adverbs of frequency} & Shows how often an action occurs. & \textit{She always drinks tea in the morning.} \\
+\textbf{Universal or scientific truths} & Expresses scientific or general truths. & \textit{Water boils at 100°C.} \\
+\textbf{Timetables and scheduled events} & Describes planned or scheduled events. & \textit{The train leaves at 9 a.m.} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+
+\subsubsection*{Remarque : Adverbs of Frequency}
+
+Use the \textbf{Present Simple} when these words appear in a sentence:
+
 \begin{itemize}
-  \item \textbf{Do} + \textit{I / you / we / they} + \textit{base verb} ?  
-  \textit{Example:} Do you speak English?
-  \item \textbf{Does} + \textit{he / she / it} + \textit{base verb} ?  
-  \textit{Example:} Does she study French?
+    \item always, usually, often, sometimes, rarely, never
+    \item every day
+    \item on Mondays, on Fridays, etc.
 \end{itemize}
 
-\subsubsection*{b. The verbs \textit{to be} and \textit{to have}}
-
-\paragraph{To be}
-\begin{itemize}
-  \item \textbf{Affirmative:} I am / You are / He-She-It is / We are / They are  
-  \textit{Example:} She is a teacher.
-  \item \textbf{Negative:} I am not / You aren’t / He isn’t / etc.  
-  \textit{Example:} They aren’t tired.
-  \item \textbf{Interrogative:} Am I...? / Are you...? / Is he...?  
-  \textit{Example:} Are you ready?
-\end{itemize}
-
-\paragraph{To have}
-\begin{itemize}
-  \item \textbf{Affirmative:} I/You/We/They have – He/She/It has  
-  \textit{Example:} He has a car.
-  \item \textbf{Negative:} I/You/We/They don’t have – He/She/It doesn’t have  
-  \textit{Example:} She doesn’t have time.
-  \item \textbf{Interrogative:} Do you have...? / Does he have...?  
-  \textit{Example:} Do they have children?
-\end{itemize}
-
-\subsection*{c. Uses of the Present Simple}
-
-\begin{itemize}
-  \item \textbf{General facts and situations:}  
-  \textit{Example:} The sun rises in the east.
-  \item \textbf{Regular actions and routines:}  
-  \textit{Example:} I go to the gym on Mondays.
-  \item \textbf{With adverbs of frequency:} always, usually, often, sometimes, rarely, never.  
-  \textit{Example:} She always drinks tea in the morning.
-  \item \textbf{Universal or scientific truths:}  
-  \textit{Example:} Water boils at 100°C.
-  \item \textbf{Timetables and scheduled events:}  
-  \textit{Example:} The train leaves at 9 a.m.
-\end{itemize}
 
 
-\subsubsection{Present Continuous (Progressive)}
+
+\subsection*{c. Common verbes}
+
+\subsection*{Verbe \textbf{to be}}
+\begin{center}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{l|l|l|l}
+\toprule
+\textbf{Pronom} & \textbf{Affirmative} & \textbf{Négative} & \textbf{Interrogative} \\
+\midrule
+I & I am & I am not & Am I? \\
+You & You are & You are not (aren’t) & Are you? \\
+He/She/It & He is & He is not (isn’t) & Is he? \\
+We & We are & We are not (aren’t) & Are we? \\
+You & You are & You are not (aren’t) & Are you? \\
+They & They are & They are not (aren’t) & Are they? \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection*{Verbe \textbf{to have}}
+\begin{center}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{l|l|l|l}
+\toprule
+\textbf{Pronom} & \textbf{Affirmative} & \textbf{Négative} & \textbf{Interrogative} \\
+\midrule
+I & I have & I do not have & Do I have? \\
+You & You have & You do not have & Do you have? \\
+He/She/It & He has & He does not have & Does he have? \\
+We & We have & We do not have & Do we have? \\
+You & You have & You do not have & Do you have? \\
+They & They have & They do not have & Do they have? \\
+\bottomrule
+\end{tabular}
+\end{center}
 
 
-\subsubsection*{a. Formulation}
+\section{Present Continuous (Progressive)}
+
+
+\subsection*{a. Formulation}
 
 \paragraph{Structure}
 \[
@@ -179,7 +377,7 @@ He isn’t listening. / We aren’t playing football.
 \textit{Examples:}  
 Are you coming? / Is she reading now?
 
-\subsubsection*{b. Uses of the Present Continuous}
+\subsection*{b. Uses of the Present Continuous}
 
 \begin{itemize}
   \item \textbf{Actions happening now:}  
@@ -194,7 +392,7 @@ Are you coming? / Is she reading now?
   \textit{Example:} I’m meeting her soon.
 \end{itemize}
 
-\subsubsection*{c. TOEIC Tips}
+\subsection*{c. TOEIC Tips}
 
 \subsubsection*{- With time adverbs}
 
@@ -222,16 +420,1766 @@ However, when expressing irritation, annoyance, or a negative emotion, we use th
 \end{itemize}
 
 
-\subsubsection{Present Perfect Simple}
+\section{Present Perfect Simple}
+
+\subsection*{a. Définition}
+Le \textbf{Present Perfect} relie le passé au présent. Il s'utilise pour :
+\begin{itemize}
+    \item Une action passée avec un lien sur le présent : \textit{I have lost my keys.}
+    \item Une expérience de vie (moment non précisé) : \textit{She has visited London.}
+    \item Une action commencée dans le passé et qui continue : \textit{I have lived here for 5 years.}
+    \item Une action récente avec résultat visible : \textit{He has just finished his report.}
+\end{itemize}
+
+\subsection*{b. Formation}
+\textbf{Structure :} Sujet + have/has + participe passé (V-ed ou 3e colonne irrégulière)  
+\begin{itemize}
+    \item Affirmative : \textit{I have worked. / She has finished.}
+    \item Négative : \textit{I haven’t seen that movie. / He hasn’t called me yet.}
+    \item Interrogative : \textit{Have you ever been to New York? / Has he finished the project?}
+\end{itemize}
+
+\subsection*{c. Mots-clés}
+\begin{itemize}
+    \item \textbf{ever} : déjà, \textbf{never} : jamais
+    \item \textbf{just} : venir de, \textbf{already} : déjà
+    \item \textbf{yet} : encore / pas encore
+    \item \textbf{for / since} : depuis
+    \item \textbf{recently / lately} : récemment
+\end{itemize}
+
+\subsection*{d. Différence avec le Past Simple}
+\begin{tabular}{|l|c|c|}
+\hline
+Critère & Past Simple & Present Perfect \\
+\hline
+Moment précis & Oui & Non \\
+Lien avec le présent & Non & Oui \\
+Mots-clés & yesterday, last week & ever, never, just, already, yet, for, since \\
+\hline
+\end{tabular}
+
+Exemples :
+\begin{itemize}
+    \item Past Simple : \textit{I saw that movie yesterday.}
+    \item Present Perfect : \textit{I have seen that movie.}
+\end{itemize}
+
+\subsection*{e. Astuces TOEIC}
+\begin{itemize}
+    \item Souvent avec \textit{ever, never, just, yet}.
+    \item Différence Present Perfect / Past Simple est souvent testée.
+    \item Toujours utiliser Present Perfect avec \textit{since / for}.
+\end{itemize}
+
+\subsection*{f. Exemples TOEIC}
+\begin{enumerate}
+    \item I have already completed the report.
+    \item Have you ever attended a business meeting in English?
+    \item The manager hasn’t replied to my email yet.
+    \item We have been working on this project for three months.
+    \item He has just received the contract.
+\end{enumerate}
 
 
 
-\subsection{Nouns : }
-
-Nouns
+\section{Present Perfect Continuous}
 
 
-\subsection{Tips for TOEIC}
+\subsection*{a. Définition}
+Le \textbf{Present Perfect Continuous} exprime :
+\begin{itemize}
+    \item Une action commencée dans le passé et qui continue : \textit{I have been working here for 5 years.}
+    \item Une action récente avec résultat visible : \textit{She has been running, that’s why she is tired.}
+    \item La durée ou répétition d’une action : \textit{We have been studying English all morning.}
+\end{itemize}
+
+\subsection*{b. Formation}
+\textbf{Structure :} Sujet + have/has + been + verbe-ing
+\begin{itemize}
+    \item Affirmative : \textit{I have been reading for two hours. / She has been working since Monday.}
+    \item Négative : \textit{I haven’t been sleeping well lately. / He hasn’t been feeling well.}
+    \item Interrogative : \textit{Have you been waiting long? / Has she been studying English?}
+\end{itemize}
+
+\subsection*{c. Mots-clés}
+\begin{itemize}
+    \item \textbf{for / since} : depuis
+    \item \textbf{lately / recently} : récemment
+    \item \textbf{all day / all morning / all week} : toute la journée / toute la semaine
+\end{itemize}
+
+\subsection*{d. Différence avec le Present Perfect Simple}
+\begin{tabular}{|l|c|c|}
+\hline
+Critère & Present Perfect Simple & Present Perfect Continuous \\
+\hline
+Focus & Résultat de l’action & Durée / action en cours \\
+Exemple & I have read the book & I have been reading the book \\
+Mots-clés & ever, never, already, yet & for, since, lately, all day \\
+\hline
+\end{tabular}
+
+\subsection*{e. Exemples TOEIC}
+\begin{enumerate}
+    \item I have been working on this report since morning.
+    \item Have you been waiting for the manager long?
+    \item She has been traveling a lot recently.
+    \item They haven’t been attending meetings lately.
+    \item We have been discussing the contract all afternoon.
+\end{enumerate}
+
+
+\section{Past Simple}
+
+\subsection*{a. Formulation}
+
+The \textbf{Past Simple tense} is used to describe actions that started and finished in the past.  
+Regular verbs are formed by adding \textbf{-ed} to the base verb.  
+Irregular verbs have specific forms that must be memorized.
+
+\[
+\left\{
+\begin{array}{ll}
+\textbf{Affirmative:} & \text{Subject + Verb (past form) + ...} \\
+\textbf{Negative:} & \text{Subject + did not (didn't) + Base Verb + ...} \\
+\textbf{Interrogative:} & \text{Did + Subject + Base Verb + ...?}
+\end{array}
+\right.
+\]
+
+\begin{tcolorbox}[colback=gray!20,colframe=blue,title=\textbf{Examples}]
+\begin{itemize}
+    \item \textbf{Affirmative:} She \textbf{worked} yesterday.  
+    \item \textbf{Negative:} She \textbf{did not work} yesterday.  
+    \item \textbf{Interrogative:} \textbf{Did she work} yesterday?  
+\end{itemize}
+\end{tcolorbox}
+
+\subsection*{b. Use Cases}
+
+\begin{table}[h]
+\centering
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{|p{4cm}|p{6cm}|p{5cm}|}
+\hline
+\textbf{Use Case} & \textbf{Explanation} & \textbf{Example} \\ \hline
+
+\textbf{Completed past actions} & Describes actions that happened and ended in the past. & I \textbf{visited} Paris last year. \\ \hline
+
+\textbf{Past habits (no longer true)} & Expresses past routines or repeated actions. & She \textbf{walked} to school every day. \\ \hline
+
+\textbf{Sequence of events} & Used to tell a series of completed actions. & He \textbf{entered}, \textbf{sat down}, and \textbf{started} reading. \\ \hline
+
+\textbf{Specific time expressions} & Often used with time markers such as: yesterday, ago, last week, in 2010, etc. & They \textbf{met} two days ago. \\ \hline
+
+\end{tabular}
+\caption{Past Simple – Use Cases}
+\end{table}
+
+\subsection*{c. Common Irregular Verbs (TOEIC Focus)}
+
+\newpage 
+\vspace{1cm}
+\begin{table}[h]
+\centering
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{|l|l|l|}
+\hline
+\textbf{Base Form} & \textbf{Past Simple} & \textbf{Meaning} \\ \hline
+be & was / were & être \\ \hline
+begin & began & commencer \\ \hline
+buy & bought & acheter \\ \hline
+break & broke & casser \\ \hline 
+bring & brought & apporter \\ \hline
+build & built & apporter \\ \hline
+come & came & venir \\ \hline
+catch & caught & attraper \\ \hline 
+cost & cost & couter \\ \hline
+cut & cut & couper \\ \hline 
+do & did & faire \\ \hline
+eat & ate & manger \\ \hline 
+feel & felt & sentir \\ \hline 
+find & found & trouver \\ \hline  
+get & got & obtenir \\ \hline
+go & went & aller \\ \hline
+give & gave & donner \\ \hline 
+have & had & avoir \\ \hline
+know & knew & savoir \\ \hline 
+leave & left & laisser / partir \\ \hline 
+make & made & fabriquer / faire \\ \hline
+meet & met & rencontrer \\ \hline 
+run & rab & courir \\ \hline 
+say & said & dire \\ \hline
+see & saw & voir \\ \hline
+sell & sold & vendre \\ \hline 
+send & sent & envoyer \\ \hline 
+sit & sat & étre assis \\ \hline 
+stand & stood & étre debout \\ \hline 
+take & took & prendre \\ \hline
+teach & taught & enseigner \\ \hline 
+tell & told & dire \\ \hline 
+think & thought & penser \\ \hline 
+write & wrote & écrire \\ \hline
+fall & fell & tomber (fell of ) \\ \hline  
+\end{tabular}
+% \caption{Common Irregular Verbs in the TOEIC}
+\end{table}
+
+
+\subsection*{d. Tips for TOEIC}
+
+\begin{itemize}
+    \item The \textbf{Past Simple} is often used with clear time references (\textit{yesterday, last week, two days ago, in 2020}).  
+    \item Avoid confusion with the \textbf{Present Perfect} — if the time is mentioned explicitly, use the \textbf{Past Simple}.  
+    \item In spoken English, contractions are very common:  
+    \textit{did not → didn’t}, \textit{was not → wasn’t}, \textit{were not → weren’t}.  
+    \item Some irregular verbs change vowels only: \textit{sing → sang}, \textit{drink → drank}, \textit{begin → began}.  
+\end{itemize}
+
+\newpage
+\section{Past Continuous}
+
+\subsection*{a. Formulation}
+
+\[
+\text{Subject + was/were + V-ing}
+\]
+
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+\textbf{Subject} & \textbf{Auxiliary} & \textbf{Verb} & \textbf{Example} \\
+\hline
+I / He / She / It & was & V-ing & I was working. \\
+You / We / They & were & V-ing & They were studying. \\
+\hline
+\end{tabular}
+\end{center}
+
+\textbf{Negative:} Subject + was/were \textbf{not} + V-ing  
+\textit{Example:} I wasn’t sleeping. / They weren’t listening.
+
+\textbf{Interrogative:} Was/Were + Subject + V-ing ?  
+\textit{Example:} Was he reading? / Were you playing?
+
+
+\subsection*{b. Uses Cases}
+
+
+\begin{center}
+\begin{tabular}{|p{4cm}|p{6cm}|p{5cm}|}
+\hline
+\textbf{Use Case} & \textbf{Explanation} & \textbf{Example} \\
+\hline
+Action in progress in the past (specific) & To describe an action happening at a specific moment in the past. & At 10 PM yesterday, I was eating dinner. \\
+\hline
+Interrupted action & One action was ongoing when another (shorter) action happened. & I was studying when Mohamed called. \\
+\hline
+Two actions in parallel & Two long actions happening at the same time. & I was doing my homework while my family was watching TV. \\
+\hline
+Setting a scene & To describe the background or context in a story. & The sun was shining, and the birds were singing. \\
+\hline
+\end{tabular}
+\end{center}
+
+
+\vspace{1cm}
+\subsection*{c. Tips TOEIC}
+
+\begin{center}
+\begin{tabular}{|p{4cm}|p{6cm}|p{5cm}|}
+\hline
+\textbf{Tip} & \textbf{Explanation} & \textbf{Example} \\
+\hline
+After \textbf{while} → Past Continuous & While introduces the longer or ongoing action. & While I was cooking, he was setting the table. \\
+\hline
+After \textbf{when} → Past Simple & When introduces the short, interrupting action. & I was cooking when he arrived. \\
+\hline
+Difference: Past Simple vs Past Continuous & Past Simple → completed action.Past Continuous → ongoing action. & I ate dinner at 8 PM. (finished), I was eating dinner at 8 PM. (in progress) \\
+\hline
+\end{tabular}
+\end{center}
+
+\newpage
+\section{Past Perfect}
+
+\subsection*{a. Formulation}
+
+\[
+\text{Subject + had + past participle (V3)}
+\]
+
+\begin{itemize}
+  \item \textbf{Affirmative:} She had finished her work before the meeting started.
+  \item \textbf{Negative:} She \textit{had not finished} her work before the meeting.
+  \item \textbf{Interrogative:} \textit{Had she finished} her work before the meeting?
+\end{itemize}
+
+
+\subsection*{b. Uses}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.4}
+\begin{tabular}{|p{4cm}|p{6cm}|p{6cm}|}
+\hline
+\textbf{Use Case} & \textbf{Explanation} & \textbf{Example Sentence} \\
+\hline
+sequence of events in the past & To indicate what happened first in a sequence & By the time we arrived, the movie had already started. \\
+\hline
+Action completed before another past event & To show that an action was finished before another action in the past & She had left the office before her manager arrived. \\
+\hline 
+\end{tabular}
+\end{center}
+
+\textbf{Examples :}
+
+\begin{itemize}
+    \item I had brushed my teeth before I went to bed.
+    \item After I had studied, I watched TV.
+    \item When I arrived to the train station, the traun had left.
+\end{itemize}
+
+
+\subsection*{c. Tips for TOEIC}
+
+\begin{itemize}
+  \item \textbf{Signal words:} by the time, before, after, as soon as,already, just.  
+  \item TOEIC tip: look for a past event mentioned in the sentence — the Past Perfect often appears to show \textbf{what happened first}.  
+  \item Difference with Past Simple:
+        \begin{itemize}
+            \item Past Simple → action completed in the past.  
+            \item Past Perfect → action completed \textbf{before another past action}.  
+        \end{itemize}
+  \item Common pattern: “By the time + past simple, past perfect”.  
+        Example: \textit{By the time she arrived, we had finished the meeting.}
+\end{itemize}
+
+
+
+
+\newpage
+\section{Past Perfect Continuous}
+
+\subsection*{a. Formulation}
+
+\[
+\text{Subject + had been + verb(ing)}
+\]
+
+\begin{itemize}
+  \item \textbf{Affirmative:} She had been working all day.
+  \item \textbf{Negative:} She \textit{had not been working} all day.
+  \item \textbf{Interrogative:} \textit{Had she been working} all day?
+\end{itemize}
+
+\bigskip
+
+
+
+\subsection*{b. Uses}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.4}
+\begin{tabular}{|p{4cm}|p{6cm}|p{6cm}|}
+\hline
+\textbf{Use Case} & \textbf{Explanation} & \textbf{Example Sentence} \\
+\hline
+Duration before another past event & To describe an action that continued up to another event in the past & She had been studying for two hours before the test started. \\
+\hline
+Cause of a past situation & To explain the reason for a past state or feeling & He was tired because he had been running. \\
+\hline
+Recently completed past actions & To show an action that just finished before another event & It had been raining, so the streets were wet. \\
+\hline
+\end{tabular}
+\end{center}
+
+
+\subsection*{C. Tips for TOEIC}
+
+\begin{itemize}
+  \item \textbf{Signal words:} before, for, since, when, by the time.
+  \item Often used to show the \textbf{duration} of an action before another past event.  
+        Example: \textit{They had been waiting for an hour before the bus arrived.}
+  \item  Difference with \textbf{Past Perfect}:  
+        \textit{Past Perfect Continuous} → insist on the \textbf{duration/process}.  
+        \textit{Past Perfect} → insist on the \textbf{completion/result}.
+
+\end{itemize}
+
+
+
+
+\chapter{Comparison of Adjectives}
+
+\begin{center}
+\begin{tabular}{@{} l l l l @{}} 
+\toprule
+\textbf{Type} & \textbf{Structure} & \textbf{Example} & \textbf{Note} \\ 
+\midrule
+Equality & \texttt{as + adj + as} & as big as & expresses equality \\ 
+Comparative (short adj) & \texttt{adj + -er + than} & taller than & e.g. big $\rightarrow$ bigger \\ 
+Comparative (long adj) & \texttt{more + adj + than} & more beautiful than & positive comparison \\ 
+Comparative (negative) & \texttt{less + adj + than} & less interesting than & negative comparison \\ 
+Superlative (short adj) & \texttt{the + adj + -est} & the smallest &  \\ 
+Superlative (long adj) & \texttt{the most + adj} & the most intelligent & positive superlative \\ 
+Superlative (negative) & \texttt{the least + adj} & the least expensive & negative superlative \\ 
+\bottomrule
+\end{tabular}
+\end{center}
+
+
+\begin{center}
+\textbf{RQ: Exceptions of Adjective Comparison Form}
+
+\vspace{0.5cm}
+
+\begin{tabular}{@{} l l l l @{}} 
+\toprule
+\textbf{Adjective} & \textbf{Comparative} & \textbf{Superlative} & \textbf{Note / Meaning} \\ 
+\midrule
+good & better & best & irregular form (bon → meilleur) \\ 
+bad & worse & worst & irregular form (mauvais → pire) \\ 
+far & farther / further & farthest / furthest & both correct (distance or degree) \\ 
+little & less & least & quantity or size \\ 
+much / many & more & most & quantity comparison \\ 
+\bottomrule
+\end{tabular}
+\end{center}
+
+
+
+\begin{center}
+\renewcommand{\arraystretch}{1.4}
+\small
+\begin{tabular}{|p{2.8cm}|p{3cm}|p{4.5cm}|p{4.5cm}|}
+\hline
+\textbf{Word Type} & \textbf{Common Suffixes} & \textbf{Explanation / Meaning} & \textbf{Examples} \\
+\hline
+\textbf{Noun} 
+& -tion, -sion, -ment, -ness, -ity, -er, -or, -ist, -ance, -ence, -ship, -hood 
+& Action, person, state, or quality 
+& creation, happiness, actor, friendship, childhood \\
+\hline
+\textbf{Verb} 
+& -ize/-ise, -ify, -en, -ate 
+& To make, cause, or become 
+& organize, simplify, widen, celebrate \\
+\hline
+\textbf{Verb used as Noun (Gerund)} 
+& -ing 
+& Verb form acting as a noun (subject or object) 
+& \textit{Reading is fun.} / \textit{I enjoy swimming.} \\
+\hline
+\textbf{Adjective} 
+& -able/-ible, -ous/-ious, -ful, -less, -al, -ive, -ic/-ical, -y 
+& Describes quality or characteristic 
+& possible, curious, beautiful, hopeless, natural, creative, poetic, sleepy \\
+\hline
+\textbf{Verb used as Adjective (Participle)} 
+& -ing (present), -ed (past) 
+& Present participle = causing feeling / Past participle = feeling or result 
+& \textit{The movie is boring. / I am bored.} \\
+\hline
+\textbf{Adverb} 
+& -ly, -ward/-wards, -wise 
+& Describes how, where, or in what manner 
+& quickly, forward, otherwise \\
+\hline
+\end{tabular}
+\end{center}
+
+\chapter{Conditions:}
+
+
+\begin{table}[h!]
+\centering
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{|c|p{3.3cm}|p{4.1cm}|p{4.5cm}|p{3.5cm}|}
+\hline
+\textbf{N°} & 
+\textbf{Structure} &
+\textbf{Usage (English)} &
+\textbf{Example} &
+\textbf{Remarks} \\
+\hline
+
+0 &
+If + Present Simple, Present Simple &
+General truths, scientific facts, habits &
+\textit{If you heat ice, it melts.} &
+You can use \textbf{when} instead of \textit{if} when the result is certain. \\
+\hline
+
+1 &
+If + Present Simple, Will + infinitive &
+Real and possible situations in the future &
+\textit{If it rains, we will stay home.} &
+\textbf{unless} = \textit{if … not}. \\
+\hline
+
+2 &
+If + Past Simple, Would + infinitive &
+Unreal or imaginary situations in the present or future &
+\textit{If I had more money, I would travel.} &
+Use \textbf{were} instead of \textit{was} after I/he/she;  
+\textbf{might/could} can replace \textit{would}. \\
+\hline
+
+3 &
+If + Past Perfect, Would have + past participle &
+Unreal situations in the past / regrets &
+\textit{If you had called, I would have come.} &
+--- \\
+\hline
+
+Mixed &
+If + Past Perfect, Would + infinitive  &
+Past condition → present result &
+\textit{If I had studied, I would be more confident now.} &
+--- \\
+\hline
+
+\end{tabular}
+\caption{Summary of English Conditional Forms}
+\end{table}
+
+
+
+
+
+\chapter{Difference between \textbf{GOING TO} and \textbf{WILL}}
+
+
+\textbf{Both "will" and "going to" are used to express the future, but they are not used in the same situations.}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.4}
+\begin{tabular}{|p{3cm}|p{5cm}|p{5cm}|}
+\hline
+\textbf{Usage} & \textbf{WILL} & \textbf{GOING TO} \\
+\hline
+\textbf{1. Decision moment} & Used for decisions made at the moment of speaking. & Used for decisions already made before the moment of speaking. \\
+\hline
+\textbf{Example} & I'm thirsty. I \textbf{will} buy a bottle of water. & I bought a bottle of water because I \textbf{was going to} get thirsty. \\
+\hline
+\textbf{2. Prediction (based on opinion)} & Used to express what we \textbf{think or believe} will happen. & Used when there is \textbf{evidence} that something is going to happen. \\
+\hline
+\textbf{Example} & I think it \textbf{will} rain tomorrow. & Look at those clouds! It’s \textbf{going to} rain soon. \\
+\hline
+\textbf{3. Promise / Offer / Request} & Used for promises, offers, or requests. & Not used in this context. \\
+\hline
+\textbf{Example} & I \textbf{will} help you with your report. &  (Not used) \\
+\hline
+\textbf{4. Planned future action} & Not used for pre-planned actions. & Used for planned or intended future actions. \\
+\hline
+\textbf{Example} &  (Not natural) & We are \textbf{going to} visit Paris next week. \\
+\hline
+\textbf{5. Spontaneous speech} & Used when we decide or react instantly. & Used when the plan already exists. \\
+\hline
+\textbf{Example} & Oh, the phone is ringing — I \textbf{will} answer it! & I’m \textbf{going to} call him later today. \\
+\hline
+\end{tabular}
+\end{center}
+
+\vspace{0.3cm}
+\textbf{Summary:}
+\begin{itemize}
+    \item \textbf{WILL} → instant decisions, promises, beliefs, offers.
+    \item \textbf{GOING TO} → plans, intentions, and predictions with evidence.
+\end{itemize}
+
+\vspace{0.3cm}
+\textbf{Examples in context:}
+\begin{itemize}
+    \item I think he \textbf{will} pass the test. (opinion)
+    \item He’s \textbf{going to} study harder next month. (plan)
+\end{itemize}
+
+
+\chapter{Pronouns}
+
+
+\section{Relative Pronouns}
+
+\subsection*{a. Definition}
+
+A \textbf{relative pronoun} introduces a clause that gives more information about a noun.  
+It connects two ideas into one sentence and avoids repetition. Relative clauses describe or identify a person, place, thing, or idea mentioned in the main clause.
+
+
+
+\subsection*{Formulation Rule}
+
+\[
+\left\{
+\begin{array}{ll}
+\textbf{Form 1:} & \text{Noun (person / thing) + Relative Pronoun + Clause} \\[6pt]
+\textbf{Form 2:} & \text{Noun + (who / which / that / whose / where / whom) + Subject + Verb + [Object]} \\[6pt]
+\textbf{Omission Rule:} & \text{If the relative pronoun is the \textit{object} of the clause, it can be omitted.}
+\end{array}
+\right.
+\]
+
+\begin{center}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{p{3cm}|p{6cm}|p{5cm}}
+\toprule
+\textbf{Structure} & \textbf{Sentence} & \textbf{Translation} \\
+\midrule
+\textbf{Form 1} & The man \textbf{who lives next door} is friendly. & L’homme \textbf{qui habite à côté} est gentil. \\
+\textbf{Form 2} & The book \textbf{which I read} was interesting. & Le livre \textbf{que j’ai lu} était intéressant. \\
+\textbf{Omission rule} & The woman \textbf{(who) you met} is my teacher. & La femme \textbf{que tu as rencontrée} est ma prof. \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+
+\subsection*{b. Relative Pronouns Table}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{p{2.5cm}|p{3cm}|p{4cm}|p{5cm}}
+\toprule
+\textbf{Pronoun} & \textbf{Refers to} & \textbf{Explanation} & \textbf{Example} \\
+\midrule
+\textbf{who} & People (subject) & Used for the person performing the action. & The man \textbf{who lives} next door is friendly. \\
+\textbf{whom} & People (object) & Used for the person receiving the action (formal). & The woman \textbf{whom we met} is a doctor. \\
+\textbf{which} & Things / Animals & Adds information about an object or animal. & The book \textbf{which I bought} is interesting. \\
+\textbf{that} & People / Things & Can replace “who” or “which” in informal contexts. & The car \textbf{that I drive} is new. \\
+\textbf{whose} & Possession & Indicates ownership or relationship. & The man \textbf{whose car broke down} is my friend. \\
+\textbf{where} & Places & Refers to a place. & The city \textbf{where I was born} is beautiful. \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+
+
+\subsection*{c. Uses}
+
+\begin{itemize}
+    \item \textbf{To connect two phrases (to avoid repetition):}  
+    \textit{Ahmed used to be an engineer. Ahmed is now a YouTuber.}  
+    → \textbf{Ahmed, who used to be an engineer, is now a YouTuber.}
+    
+    \item \textbf{To specify or describe:}  
+    \textit{According to statistics, people who eat organic food live longer.}  
+    \textit{I love books that have drawings in them.}
+\end{itemize}
+
+
+\section{Linking words}
+
+\subsection*{a. Definition}
+
+\textbf{Linking words} (also called \textit{connectors} or \textit{transition words}) are expressions used to \textbf{connect ideas, sentences, or paragraphs}.  
+They help to:
+\begin{itemize}
+    \item make writing more \textbf{coherent} and \textbf{fluent};
+    \item show \textbf{logical relationships} between ideas (cause, contrast, addition, etc.);
+    \item guide the reader through your reasoning.
+\end{itemize}
+
+They are essential in \textbf{essays, reports, formal emails, and presentations}.
+
+
+\subsection*{b. Table of Common Linking Words}
+
+
+\begin{center}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{p{3cm}|p{4cm}|p{3.5cm}|p{6cm}}
+\textbf{Word / Expression} & \textbf{Formulation} & \textbf{Use / Function} & \textbf{Example} \\ \hline
+\textbf{Although} & Although + subject + verb & Introduces a contrast & \textit{Although it was raining, we went out.} \\ \hline
+\textbf{Though} & Though + subject + verb & Contrast (informal or spoken) & \textit{I like it, though it’s expensive.} \\ \hline
+\textbf{Even though} & Even though + subject + verb & Strong contrast & \textit{Even though he studied hard, he failed.} \\ \hline
+\textbf{Despite} & Despite + noun / V-ing & Contrast & \textit{Despite the rain, we went out.} \\ \hline
+\textbf{In spite of} & In spite of + noun / V-ing & Contrast (formal) & \textit{In spite of being tired, she kept working.} \\ \hline
+\textbf{However} & However + clause & Contrast between two ideas & \textit{It was raining. However, we went out.} \\ \hline
+\textbf{Therefore} & Therefore + clause & Shows a consequence or conclusion & \textit{He didn’t study; therefore, he failed.} \\ \hline
+\textbf{Thus} & Thus + clause & Formal equivalent of "therefore" & \textit{The data were incomplete; thus, the result is uncertain.} \\ \hline
+\textbf{Consequently} & Consequently + clause & Logical consequence & \textit{Prices rose; consequently, demand fell.} \\ \hline
+\textbf{Moreover} & Moreover + clause & Adds an idea (formal) & \textit{She’s smart. Moreover, she’s very kind.} \\ \hline
+\textbf{Furthermore} & Furthermore + clause & Adds an idea (formal) & \textit{The plan is expensive. Furthermore, it’s risky.} \\ \hline
+\textbf{In addition} & In addition + clause / noun & Adds information or argument & \textit{In addition, the project will create jobs.} \\ \hline
+\textbf{On the other hand} & On the other hand + clause & Introduces an opposite opinion & \textit{He likes big cities. On the other hand, I prefer the countryside.} \\ \hline
+\textbf{Whereas} & Whereas + subject + verb & Direct contrast between two facts & \textit{Whereas I prefer tea, she prefers coffee.} \\ \hline
+\textbf{For example} & For example + noun / clause & Introduces an example & \textit{Some animals, for example lions, hunt in groups.} \\ \hline
+\textbf{For instance} & For instance + noun / clause & Example (same as "for example") & \textit{Many countries, for instance Japan, use robots.} \\ \hline
+\textbf{In conclusion} & In conclusion + clause & Used to conclude a text & \textit{In conclusion, education is key to success.} \\ \hline
+\textbf{To sum up} & To sum up + clause & Summarizes the main ideas & \textit{To sum up, we must act now.} \\ \hline
+\textbf{Besides} & Besides + noun / clause & Adds a secondary idea or reason & \textit{I don’t want to go. Besides, it’s too late.} \\ \hline
+\textbf{Nevertheless} & Nevertheless + clause & Contrast (formal, like "however") & \textit{It was hard; nevertheless, he succeeded.} \\ \hline
+\textbf{As a result} & As a result + clause & Expresses a consequence & \textit{The company lost money; as a result, they cut jobs.} \\ \hline
+\textbf{Hence} & Hence + clause / noun & Formal, shows consequence & \textit{He’s the CEO, hence the high salary.} \\ \hline
+\end{tabular}
+\end{center}
+
+
+\subsection*{c. Tips }
+
+\begin{itemize}
+    \item \textbf{Although / though / even though} → followed by a \textbf{full sentence}. \\
+    Example: \textit{Although it was late, he kept working.}
+    \item \textbf{Despite / in spite of} → followed by a \textbf{noun or -ing form}. \\
+    Example: \textit{Despite being tired, he worked.}
+    \item \textbf{However, therefore, moreover} → usually placed \textbf{after a period or semicolon}. \\
+    Example: \textit{He was tired; however, he continued.}
+    \item Don’t confuse \textit{although} and \textit{despite} – they have different grammatical structures.
+\end{itemize}
+
+
+
+% \section*{D. Usage Tips}
+
+% \begin{itemize}
+%     \item Use linking words to \textbf{structure your writing}: introduction, development, and conclusion.  
+%     \item \textbf{Vary} your connectors – don’t always repeat "because" or "so".  
+%     \item Choose the correct type of connector for the relationship:
+%     \begin{itemize}
+%         \item \textbf{Addition} → moreover, furthermore, in addition
+%         \item \textbf{Contrast} → however, although, despite
+%         \item \textbf{Cause / Effect} → because, therefore, as a result
+%         \item \textbf{Example} → for example, for instance
+%         \item \textbf{Conclusion} → in conclusion, to sum up
+%     \end{itemize}
+% \end{itemize}
+
+
+
+\section{Clauses of Result}
+
+\subsection*{a. Definition}
+A \textbf{result clause} shows the \textit{outcome or consequence} of an action or situation mentioned in the main clause.  
+It answers the question: \textit{"What happened as a result?"}  
+We often use expressions such as \textbf{so...that}, \textbf{such...that}, \textbf{since}, \textbf{now that}, and \textbf{as long as} to introduce result or reason clauses.
+
+\subsection*{b. Result Clauses}
+
+\begin{center}
+\begin{tabular}{|p{2cm}|p{5cm}|p{4.5cm}|p{5.5cm}|}
+\hline
+\textbf{Clause Type} & \textbf{Form} & \textbf{Use} & \textbf{Example} \\
+\hline
+\textbf{SO...THAT} & \textit{Subject + be + so + adjective + that + clause} & Used to show a result caused by the degree of an adjective. & Mike is \textbf{so clever that} he always gets good grades. \\
+\hline
+\textbf{SO...THAT} & \textit{Subject + verb + so + adverb + that + clause} & Used to show a result caused by the degree of an adverb. & He walked \textbf{so slowly that} he missed the bus. \\
+\hline
+\textbf{SUCH... THAT} & \textit{Subject + be + such (+ a/an) + adjective + noun + that + clause} & Used to show a result caused by the intensity or quality of a noun phrase. \newline (Use \textit{a/an} with singular countable nouns.) & Dora is \textbf{such a good teacher that} everybody admires her.  \\
+\hline
+\textbf{SINCE} & \textit{Since + subordinate clause, + main clause} & Introduces a reason for the action or situation in the main clause. & \textbf{Since} you speak perfect English, I want you to translate for me. \newline We decided to stop, \textbf{since} it was dark. \\
+\hline
+\textbf{NOW THAT} & \textit{Now that + subordinate clause, + main clause} & Introduces a new or recent condition that explains the main clause. & \textbf{Now that} she is sixty, she may decide to stop working. \newline I’ll go home, \textbf{now that} the party is over. \\
+\hline
+\textbf{AS LONG AS} & \textit{As long as + subordinate clause, + main clause} & Expresses a condition necessary for the action or situation in the main clause. & \textbf{As long as} Fred agrees to help me, I’ll help him. \newline You can drink the water, \textbf{as long as} you boil it first. \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection*{Summary}
+\begin{itemize}
+    \item \textbf{so...that} → result caused by an adjective or adverb.  
+    \item \textbf{such...that} → result caused by an adjective + noun phrase.  
+    \item \textbf{since} → introduces a reason.  
+    \item \textbf{now that} → introduces a new condition.  
+    \item \textbf{as long as} → expresses a condition or requirement.
+\end{itemize}
+
+
+
+\chapter{Modals}
+
+\section{Modal Verbs}
+
+\subsection*{a. Definition}
+
+A \textbf{modal verb} is an auxiliary verb that expresses the speaker’s attitude or the “mode” of the main verb.  
+It indicates possibility, ability, permission, necessity, or advice.  
+Modal verbs are always followed by the \textbf{base form} of the main verb (without “to”).
+
+\[
+\left\{
+\begin{array}{ll}
+\textbf{Affirmative:} & \text{Subject + Modal Verb + Base Verb} \\
+\textbf{Negative:} & \text{Subject + Modal Verb + not + Base Verb} \\
+\textbf{Interrogative:} & \text{Modal Verb + Subject + Base Verb?}
+\end{array}
+\right.
+\]
+
+\begin{tcolorbox}[colback=lightgray!40,colframe=blue,title=\textbf{Examples}]
+can, could, may, might, shall, should, will, would, must, ought to, had better
+\end{tcolorbox}
+
+
+\subsection*{b. Modals}
+
+\subsubsection*{Capacity / Suggestion / Advice :}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{p{2.2cm}|p{5cm}|p{5cm}|p{1cm}|p{1cm}}
+\toprule
+\textbf{Modal Verb} & \textbf{Explanation} & \textbf{Sense} & \textbf{Neg} & \textbf{Interro} \\
+\midrule
+\textbf{can} & Expresses present ability or possibility. & Ability  & yes & yes \\
+\textbf{could} & Expresses past ability or polite suggestion. & Past ability  & yes & yes \\
+\textbf{shall} & Expresses suggestion or future intention (formal). & Suggestion  & yes & yes \\
+\textbf{should} & Expresses advice, recommendation, or mild obligation. & Advice  & yes & yes \\
+\textbf{ought to} & Expresses moral duty or strong advice (similar to “should”). & Advice  & no & no \\
+\textbf{had better} & Expresses strong advice or warning (informal). & Strong advice / Warning & yes & no \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsubsection*{Examples :}
+
+\begin{itemize}
+    \item \textbf{Ability:} I \textbf{can} speak three languages.  
+    \item \textbf{Past ability:} When I was young, I \textbf{could} run fast.  
+    \item \textbf{Suggestion:} \textbf{Shall} we go for a walk?  
+    \item \textbf{Advice:} You \textbf{should} see a doctor.  
+    \item \textbf{Strong advice:} You \textbf{had better} study for the test.  
+\end{itemize}
+
+
+\subsubsection*{Permission / Request}
+
+\begin{table}[h]
+\centering
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{|l|p{5cm}|p{3cm}|p{5cm}|}
+\hline
+\textbf{Modal Verb} & \textbf{Explanation} & \textbf{Sense} & \textbf{Example} \\ \hline
+
+\textbf{can} & Used to ask or give permission in informal situations. & Informal permission / request & Can I leave early today? \\ \hline
+
+\textbf{could} & Polite or tentative form of “can” when asking permission. & Polite request / permission & Could I borrow your pen, please? \\ \hline
+
+\textbf{will} & Used to make a direct request or express willingness. & Request & Will you help me with my homework? \\ \hline
+
+\textbf{would} & More polite and formal than “will”. Often used in polite offers or requests. & Polite request  & Would you like a cup of tea? \\ \hline
+
+\textbf{may} & Formal way to ask or give permission. & Formal permission & May I come in, sir? \\ \hline
+
+\textbf{might} & Slightly more hesitant or uncertain than “may”. & Polite hesitant permission & Might I ask you a question? \\ \hline
+
+\end{tabular}
+% \caption{Modal Verbs for Permission and Demand}
+\end{table}
+
+
+\subsubsection*{Obligation / Necessity :}
+
+\begin{table}[h]
+\centering
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{|l|p{5cm}|p{3cm}|p{5cm}|}
+\hline
+\textbf{Modal Verb} & \textbf{Explanation} & \textbf{Sense} & \textbf{Example} \\ \hline
+
+\textbf{must} & Expresses a strong obligation or necessity imposed by the speaker. & Strong obligation / necessity & You \textbf{must} wear a seatbelt in the car. \\ \hline
+
+\textbf{must not} & Expresses prohibition — something is not allowed. & Prohibition / strong negative obligation & You \textbf{must not} smoke in the hospital. \\ \hline
+
+\textbf{have to} & Expresses an external obligation, rule, or requirement. & External obligation / necessity & I \textbf{have to} submit the report by Monday. \\ \hline
+
+\textbf{does not have to} & Expresses a lack of necessity — something is not required. & Absence of obligation & She \textbf{does not have to} come if she’s busy. \\ \hline
+
+\textbf{have got to} & Informal form of “have to”, mainly used in spoken English. & Informal necessity / strong obligation & I’ve \textbf{got to} finish this work today. \\ \hline
+
+\end{tabular}
+% \caption{Modal Verbs for Obligation and Necessity}
+\end{table}
+
+\chapter{Passive voice}
+
+
+\section{Passive voice}
+
+\subsection*{a. Definition}
+
+The \textbf{Passive Voice} is used when the \textbf{focus is on the action} or the \textbf{receiver of the action}, not on who performs it.  
+The subject of the active sentence becomes the \textbf{agent} (introduced by "by") or is omitted if not important.
+
+\medskip
+\subsubsection*{Formation:}  
+\[
+\text{Passive} = \textbf{Be} + \text{Past Participle (P.P.)}
+\]
+Example:  
+\textit{Active:} The chef cooks the meal.  
+\textit{Passive:} The meal \textbf{is cooked} (by the chef).
+
+\subsection*{b. Uses of the Passive Voice}
+
+\begin{table}[ht]
+\centering
+\renewcommand{\arraystretch}{1.4}
+\begin{tabular}{|p{3cm}|p{6cm}|p{5cm}|}
+\hline
+\textbf{Use} & \textbf{Explanation} & \textbf{Example} \\ \hline
+When the doer is unknown & The person who performs the action is not known or not important. & My bike \textbf{was stolen} yesterday. \\ \hline
+When the doer is obvious & It is clear who did the action, so we don’t need to mention them. & Taxes \textbf{are collected} every year. \\ \hline
+When the action is more important than the subject & The focus is on the result, not the person. & A new hospital \textbf{has been built}. \\ \hline
+In formal or scientific writing & Used to sound objective or impersonal. & The data \textbf{were analyzed} using Python. \\ \hline
+To avoid blame or responsibility & The speaker avoids saying who caused the problem. & A mistake \textbf{was made}. \\ \hline
+\end{tabular}
+\end{table}
+
+\subsection*{c. Transforming Active to Passive}
+
+To change a sentence from the \textbf{Active Voice} to the \textbf{Passive Voice}:
+
+\begin{enumerate}
+    \item Remove or move the subject (agent) to the end of the sentence with “by”.
+    \item Place the object of the active sentence as the new subject.
+    \item Add the correct form (the same tense of the verb in the active form) of \textbf{Be} + \textbf{Past Participle (P.P.)}.
+    % \item Keep the same tense of the verb in the passive form.
+\end{enumerate}
+
+\textbf{Example formula:}
+\[
+\text{Active: Subject + Verb + Object} \Rightarrow \text{Passive: Object + Be + P.P. (+ by + Subject)}
+\]
+
+\subsubsection*{Examples in All Tenses :}
+
+\begin{table}[ht]
+\centering
+\renewcommand{\arraystretch}{1.4}
+\begin{tabular}{|p{3cm}|p{5cm}|p{8cm}|}
+\hline
+\textbf{Tenses} & \textbf{Active Voice} & \textbf{Passive Voice} \\ \hline
+\textbf{Present Simple} & Mohamed kills Ahmed. & Ahmed \textbf{is killed} (by Mohamed). \\ \hline
+\textbf{Present Continuous} & Mohamed is killing Ahmed. & Ahmed \textbf{is being killed} (by Mohamed). \\ \hline
+\textbf{Present Perfect} &  Mohamed has killed Ahmed. & Ahmed \textbf{has been killed} (by Mohamed). \\ \hline
+\textbf{Past Simple} & Mohamed killed Ahmed. & Ahmed \textbf{was killed} (by Mohamed). \\ \hline
+\textbf{Past Continuous} & Mohamed was killing Ahmed. & Ahmed \textbf{was being killed} (by Mohamed). \\ \hline
+\textbf{Past Perfect} & Mohamed had killed Ahmed. & Ahmed \textbf{had been killed} (by Mohamed). \\ \hline
+\textbf{Future Simple} & Mohamed will kill Ahmed. & Ahmed \textbf{will be killed} (by Mohamed). \\ \hline
+\textbf{Future Continuous} &  Mohamed will be killing Ahmed. & Ahmed \textbf{will be being killed} (by Mohamed). \\ \hline
+\textbf{Future Perfect} & Mohamed will have killed Ahmed. & Ahmed \textbf{will have been killed} (by Mohamed). \\ \hline
+\end{tabular}
+\end{table}
+
+
+
+
+
+\section{Reported Speech}
+
+\subsection*{a. Definition}
+Reported Speech (or Indirect Speech) is used to tell what someone \textbf{said}, \textbf{asked}, or \textbf{told}, without quoting their exact words.  
+When we report speech, we often change the \textbf{tense}, \textbf{pronouns}, and \textbf{time expressions} to fit the context.
+
+\textbf{Example:}
+\begin{itemize}
+    \item Direct: He said, "I am tired."
+    \item Reported: He said (that) he was tired.
+\end{itemize}
+
+\subsection*{b. Formation: Steps}
+\begin{enumerate}
+    \item Change the pronouns if necessary (I → he/she, my → his/her, etc.)
+    \item Change the tense of the verb (backshift).
+    \item Adjust time and place expressions (now → then, today → that day, etc.)
+\end{enumerate}
+
+\subsection*{c. Changes of Tenses}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Direct Speech} & \textbf{Reported Speech} \\
+\hline
+Present Simple $\rightarrow$ Past Simple & "I play football" → He said (that) he played football. \\
+\hline
+Present Continuous $\rightarrow$ Past Continuous & "I am playing football" → He said (that) he was playing football. \\
+\hline
+Present Perfect $\rightarrow$ Past Perfect & "I have finished" → He said (that) he had finished. \\
+\hline
+Past Simple $\rightarrow$ Past Perfect & "I went home" → He said (that) he had gone home. \\
+\hline
+Will $\rightarrow$ Would & "I will help you" → He said (that) he would help me. \\
+\hline
+Be going to $\rightarrow$ Was/Were going to & "I am going to travel" → He said (that) he was going to travel. \\
+\hline
+Can $\rightarrow$ Could & "I can swim" → He said (that) he could swim. \\
+\hline
+May $\rightarrow$ Might & "I may come" → He said (that) he might come. \\
+\hline
+Must/Have to $\rightarrow$ Had to & "I must leave" → He said (that) he had to leave. \\
+\hline
+\end{tabular}
+
+\subsection*{d. Time and Place Changes}
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Direct} & \textbf{Indirect} \\
+\hline
+today & that day \\
+now & then / at that moment \\
+yesterday & the day before \\
+\ldots days ago & \ldots days before \\
+last week & the week before \\
+next year & the following year \\
+tomorrow & the next day / the following day \\
+here & there \\
+this & that \\
+these & those \\
+ago & before / previously \\
+tonight & that night \\
+\hline
+\end{tabular}
+
+\subsection*{e. Examples:}
+\begin{itemize}
+    \item \textbf{Present Simple → Past Simple:}  
+    He said, "I eat pizza." → He said (that) he ate pizza.
+    \item \textbf{Present Continuous → Past Continuous:}  
+    She said, "I am studying." → She said (that) she was studying.
+    \item \textbf{Present Perfect → Past Perfect:}  
+    He said, "I have finished my work." → He said (that) he had finished his work.
+    \item \textbf{Past Simple → Past Perfect:}  
+    They said, "We went to Paris." → They said (that) they had gone to Paris.
+    \item \textbf{Future (will) → would:}  
+    She said, "I will call you." → She said (that) she would call me.
+    \item \textbf{Be going to → was/were going to:}  
+    He said, "I am going to start a new job." → He said (that) he was going to start a new job.
+    \item \textbf{Can → Could:}  
+    He said, "I can help you." → He said (that) he could help me.
+    \item \textbf{May → Might:}  
+    She said, "I may come tomorrow." → She said (that) she might come the next day.
+    \item \textbf{Must → Had to:}  
+    He said, "I must leave now." → He said (that) he had to leave then.
+\end{itemize}
+
+
+
+
+
+\section{Reported Questions}
+
+\subsection*{a. Definition}
+
+\textbf{Reported Questions} (also called \textit{Indirect Questions}) are used when we report what someone asked, without quoting their exact words.  
+\\[4pt]
+\textbf{Example:}
+\begin{itemize}
+    \item Direct: He asked, “Where is my book?”
+    \item Reported: He asked where his book was.
+\end{itemize}
+
+
+\subsection*{b. Formation (Steps)}
+
+To change a direct question into a reported question, follow these steps:
+
+\begin{enumerate}
+    \item Remove quotation marks and the question mark.
+    \item Change pronouns and verb tenses (backshift of tenses).
+    \item Keep the word order as \textbf{subject + verb} (no inversion).
+    \item Use \textbf{if} or \textbf{whether} for Yes/No questions.
+    \item Keep the question word (\textbf{who, what, where, when, why, how}) for Wh-questions.
+\end{enumerate}
+
+
+\subsection*{c. Types of Reported Questions}
+
+\subsubsection*{1. Yes / No Questions}
+
+Use \textbf{if} or \textbf{whether} to introduce the reported question.
+
+\begin{tabular}{|m{5cm}|m{8cm}|}
+\hline
+\textbf{Direct Question} & \textbf{Reported Question} \\
+\hline
+He asked, “Do you like apples?” & He asked if I liked apples. \\
+\hline
+She asked, “Is he coming?” & She asked whether he was coming. \\
+\hline
+They asked, “Can you help us?” & They asked if I could help them. \\
+\hline
+\end{tabular}
+
+
+\subsubsection*{2. Wh-Questions}
+
+Keep the question word, but use the normal order (\textbf{subject + verb}), not inversion.
+
+\begin{tabular}{|m{5cm}|m{8cm}|}
+\hline
+\textbf{Direct Question} & \textbf{Reported Question} \\
+\hline
+He asked, “Where is John?” & He asked where John was. \\
+\hline
+She asked, “What are you doing?” & She asked what I was doing. \\
+\hline
+They asked, “Why did you go there?” & They asked why I had gone there. \\
+\hline
+\end{tabular}
+
+
+
+\subsection*{d. Examples :}
+
+\begin{itemize}
+    \item “Where do you live?” → He asked where I \textbf{lived.} (Present Simple → Past Simple)
+    \item “What are you doing?” → He asked what I \textbf{was doing.} (Present Continuous → Past Continuous)
+    \item “Why did you go there?” → He asked why I \textbf{had gone there.} (Past Simple → Past Perfect)
+    \item “Have you seen my car?” → He asked if I \textbf{had seen} his car. (Present Perfect → Past Perfect)
+    \item “Will you help me?” → He asked if I \textbf{would help him.} (Future → Conditional)
+    \item “Can you come?” → He asked if I \textbf{could come.}
+    \item “Are you coming?” → He asked if I \textbf{was coming.}
+    \item “Where will she go?” → He asked where she \textbf{would go.}
+    \item “Do they know you?” → He asked if they \textbf{knew me.}
+\end{itemize}
+
+\paragraph{Remark. Indirect Questions (Embedded Questions).}
+
+In an indirect question, we never use subject–auxiliary inversion.  
+After introductory expressions such as \textit{I wonder}, \textit{I don't know}, or 
+\textit{Could you tell me}, the sentence follows a normal declarative word order:
+
+\[
+\text{question word} + \text{subject} + \text{verb}
+\]
+
+Example:
+\begin{itemize}
+    \item Direct question: \textit{How much money does a professor make?}
+    \item Indirect question: \textit{I wonder how much money a professor makes.}
+\end{itemize}
+
+\textbf{Common introductory expressions for indirect questions:}
+\begin{itemize}
+    \item I wonder
+    \item I don't know / I have no idea
+    \item Could you tell me
+    \item Do you know
+    \item Can you explain
+    \item Please tell me
+    \item I'd like to know
+    \item I'm not sure
+    \item Tell me
+\end{itemize}
+
+These expressions introduce an embedded clause, which must keep the declarative structure (no inversion).
+
+\chapter{Causative}
+
+\section{Causative Verbs}
+
+\subsection*{a. Definition :}
+
+A \textbf{causative verb} is used when the subject \textit{does not perform the action directly}, but instead \textit{causes someone else to do it}.  
+In other words, the subject is responsible for the action being done, even though another person actually performs it.
+
+\subsection*{b. Types :}
+
+\begin{center}
+\begin{tabular}{|p{3cm}|p{1cm}|p{3cm}|p{5cm}|p{4cm}|}
+\hline
+\textbf{Type} & \textbf{Verb} & \textbf{Formation} & \textbf{Meaning} & \textbf{Example} \\
+\hline
+\textbf{Paying Services} & have & have + something + V3 (past participle) & You pay someone to do the action for you. More formal. The person who does the action is not important. & I \textbf{have my shirts ironed} every week. \\
+\cline{2-5}
+ & get & get + something + V3 & Same meaning as “have”, but more informal. & I \textbf{get my hair cut} once a month. \\
+\hline
+\textbf{Ask / Convince / Persuade} & have & have + someone + V1 & You ask someone to do the action for you. The person who does the action is important. & I \textbf{had my assistant send} the email. \\
+\cline{2-5}
+ & get & get + someone + to + V1 & You try to convince or persuade someone to do the action (harder than “have”). & I \textbf{got him to help} me with the report. \\
+\hline
+\textbf{Force} & make & make + someone + V1 & You force or oblige someone to do the action. & The teacher \textbf{made the students clean} the classroom. \\
+\hline
+\textbf{Permission} & let & let + someone + V1 & You allow someone to do the action. & My parents \textbf{let me go} out last night. \\
+\hline
+\end{tabular}
+\end{center}
+
+\subsection*{Summary}
+\begin{itemize}
+    \item \textbf{have / get + something + V3} → paying for a service.
+    \item \textbf{have + someone + V1} → ask someone.
+    \item \textbf{get + someone + to + V1} → persuade someone.
+    \item \textbf{make + someone + V1} → force someone.
+    \item \textbf{let + someone + V1} → allow someone.
+\end{itemize}
+
+
+
+
+
+\chapter{Subjunctive Mood}
+
+\section*{a. Definition }
+
+
+\textbf{Definition : }
+
+The subjunctive mood expresses actions or states that are \emph{hypothetical}, \emph{desired}, \emph{necessary}, or \emph{contrary to fact}. It is used when we do not state a plain fact but rather a wish, a demand, a recommendation, or an imagined situation.
+
+\vspace{1cm}
+\noindent
+\textbf{Formation :}
+
+\begin{itemize}
+  \item For most verbs: use the \emph{base form} (infinitive without to) after \texttt{that + subject}: \textit{I suggest that he \textbf{study} harder.}
+  \item For the verb \textit{to be}: use \textbf{be} for all persons: \textit{It is essential that she \textbf{be} on time.}
+  \item In unreal (contrary-to-fact) present situations use \textbf{were} for all subjects: \textit{I wish I \textbf{were} taller.}
+\end{itemize}
+
+
+
+\section*{b. Verbs that trigger the subjunctive}
+Many verbs of suggestion, demand, request, and command are followed by \texttt{that + S + base verb}.
+\medskip
+\noindent\textbf{Common verbs:} \textit{suggest, recommend, insist, ask, request, demand, command, order, propose.}
+
+\medskip
+\noindent\textbf{Examples:}
+\begin{enumerate}[nosep]
+  \item \textit{I suggest that he \textbf{take} the exam again.}
+  \item \textit{She recommended that I \textbf{read} this book.}
+  \item \textit{They insisted that he \textbf{be} present.}
+  \item \textit{The manager demanded that we \textbf{finish} the report.}
+  \item \textit{He asked that she \textbf{come} early.}
+  \item \textit{We proposed that the meeting \textbf{be} postponed.}
+\end{enumerate}
+
+\section*{c. Adjectives that trigger the subjunctive}
+Adjectives expressing necessity, importance, or urgency are often followed by a clause with the subjunctive.
+\medskip
+\noindent\textbf{Common adjectives:} \textit{important, vital, desirable, necessary, imperative, crucial, essential.}
+\medskip
+\noindent\textbf{Pattern:} \textit{It is + adjective + that + subject + base verb.}
+\medskip
+\noindent\textbf{Examples:}
+\begin{itemize}[nosep]
+  \item \textit{It is \textbf{important} that she \textbf{be} here on time.}
+  \item \textit{It is \textbf{vital} that you \textbf{follow} the instructions.}
+  \item \textit{It is \textbf{necessary} that he \textbf{attend} the meeting.}
+  \item \textit{It is \textbf{imperative} that they \textbf{leave} immediately.}
+\end{itemize}
+
+\section*{D. \textit{Wish} and unreal situations}
+\begin{itemize}
+  \item Use \textbf{wish + past simple} to express regret about the present: 
+  \begin{itemize}
+    \item \textit{I wish I \textbf{were} rich.}
+    \item \textit{She wishes she \textbf{spoke} English better.}
+  \end{itemize}
+  \item Use \textbf{wish + past perfect} to express regret about the past:
+  \begin{itemize}
+    \item \textit{I wish I \textbf{had studied} harder.}
+  \end{itemize}
+\end{itemize}
+
+\section*{E. Expressions: \textit{about time / high time / time}}
+These expressions use the past simple to indicate that something should already have happened.
+\medskip
+\noindent\textbf{Structure:} \textit{(It\textquotesingle s) (about/high) time + subject + past simple.}
+\medskip
+\noindent\textbf{Examples:}
+\begin{itemize}[nosep]
+  \item \textit{It\textquotesingle s about time you \textbf{studied}.}
+  \item \textit{It\textquotesingle s high time he \textbf{went} to bed.}
+  \item \textit{It\textquotesingle s time we \textbf{left}.}
+\end{itemize}
+
+
+
+\chapter{Negation}
+
+\section*{a. Definition}
+
+Negation in English is the grammatical process used to make a sentence negative. It is formed using negative markers such as \textbf{not}, \textbf{no}, \textbf{never}, or negative pronouns like \textbf{nobody}, \textbf{nothing}, etc. Negation can apply to verbs, nouns, pronouns, adverbs, or objects.
+
+\section*{b. Negation of Nouns}
+
+\begin{tabular}{|m{3cm}|m{7cm}|m{5cm}|}
+\hline
+\textbf{Word} & \textbf{Definition / Form / Use} & \textbf{Example} \\
+\hline
+No & Determiner meaning ``not any''; used before singular or plural nouns. & There is \textbf{no} milk left. \\
+\hline
+Neither & Used with singular nouns meaning ``not one and not the other''. & \textbf{Neither} option is correct. \\
+\hline
+Not many & Used with countable plural nouns to express a small quantity. & There are \textbf{not many} chairs in the room. \\
+\hline
+Not much & Used with uncountable nouns to express a small amount. & There is \textbf{not much} time left. \\
+\hline
+None of - Neither of & If the noun is preceded by the article THE or by a possessive (my, your, his, etc. or jonh's, peter's, etc.) we use the negative quantifiers \textbf{None of} or \textbf{Neither of}. & \textbf{None of} the students passed the test. \newline \textbf{Neither of} my parents can speak English \\
+\hline
+\end{tabular}
+
+
+\section*{c. Negative Pronouns}
+\begin{tabular}{|m{3cm}|m{7cm}|m{5cm}|}
+\hline
+\textbf{Word} & \textbf{Definition / Form / Use} & \textbf{Example} \\
+\hline
+Nobody & Means ``no person''. Subject or object. & \textbf{Nobody} came to the meeting. \\
+\hline
+No one & Same as ``nobody'', more formal. & \textbf{No one} answered the phone. \\
+\hline
+Nothing & Means ``no thing''; refers to objects or situations. & There is \textbf{nothing} to do here. \\
+\hline
+\end{tabular}
+
+\section*{d. Adverb Negations}
+\begin{tabular}{|m{3cm}|m{7cm}|m{5cm}|}
+\hline
+\textbf{Adverb / Structure} & \textbf{Definition / Form / Use} & \textbf{Example} \\
+\hline
+Never & Means ``at no time''. Can trigger inversion in formal style. & \textbf{Never have I} seen such beauty. \newline John has \textbf{never} seen that picture \\
+\hline
+Hardly ever & Means ``almost never''; very low frequency. & I \textbf{hardly ever} eat fast food. \\
+\hline
+Neither ... nor & Connects two negative alternatives; formal. & She likes \textbf{neither} coffee \textbf{nor} tea. \\
+\hline
+At all & Reinforces a negative verb; used at the end. & I don’t understand \textbf{at all}. \\
+\hline
+\end{tabular}
+
+\section*{e. Objects of Negation with Verbs}
+\begin{tabular}{|m{3cm}|m{7cm}|m{5cm}|}
+\hline
+\textbf{Word} & \textbf{Definition / Form / Use} & \textbf{Example} \\
+\hline
+Any & Means ``not even a small amount/number'' in negatives. & She didn’t buy \textbf{any} bread. \\
+\hline
+Anybody & Means ``any person'' in negative contexts. & I don’t know \textbf{anybody} here. \\
+\hline
+Anyone & Same as anybody (more formal). & He didn’t invite \textbf{anyone}. \\
+\hline
+Anything & Means ``any thing'' in negative sentences. & They didn’t say \textbf{anything}. \\
+\hline
+\end{tabular}
+
+
+
+
+
+
+
+%========================
+% TOEIC Exam 
+%========================
+
+\newpage 
+\begin{center}
+    {\Huge \textbf{TOEIC Exam Presentation}}\\[6pt]
+    \hrule
+\end{center}
+
+\vspace{1em}
+
+
+
+
+
+
+\chapter{TOEIC Exam Structure}
+
+The TOEIC Listening and Reading Test is divided into several parts. Each part assesses specific English comprehension and usage skills. 
+
+\section{Part 1 : Photographs [Questions 1-10]}
+
+\textbf{Description:}
+\begin{itemize}
+    \item In this part of the test, you will see \textbf{photographs} of people, places, objects, or actions.
+    \item For each photograph, you will hear \textbf{four statements (A, B, C, D)}.
+    \item Only \textbf{one statement correctly describes} what you can see in the photograph.
+\end{itemize}
+
+\vspace{0.3cm}
+
+\textbf{Self Questions to Help You:}
+\begin{itemize}
+    \item Where was the picture taken?
+    \item Who are the people in the picture?
+    \item What is happening in the picture?
+\end{itemize}
+
+\vspace{0.3cm}
+
+\textbf{Tips to Maximize Your Score:}
+\begin{itemize}
+    \item \textbf{Tip 1:} Listen carefully for \textbf{informal spoken English} contractions: \textit{he’s, she’s, it’s, they’re, there’s, I’ll, it’ll, gonna, I’ve, I’d (I would)}.
+    \item \textbf{Tip 2:} Focus on \textbf{details of actions and positions} (e.g. “A man is holding a cup”, “They are sitting at a table”).
+    \item \textbf{Tip 3:} Avoid being misled by \textbf{similar-sounding words} (e.g. “desk” vs. “disk”).
+\end{itemize}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{part1.png}
+    \caption{Part 1}
+    \label{fig:toeic_chart}
+\end{figure}
+
+
+
+\section{Part 2 : Question-Response [Questions 11–40]}
+
+\textbf{Description:}
+\begin{itemize}
+    \item In this part of the test, you will hear a \textbf{question from one speaker}, followed by \textbf{three possible responses} from another speaker.
+    \item You must choose the response that \textbf{best fits the question}.
+    \item No text will appear on the screen – you must rely entirely on listening comprehension.
+\end{itemize}
+
+\vspace{0.3cm}
+
+\textbf{Self Questions to Help You:}
+\begin{itemize}
+    \item \textbf{Time:} What time / When?
+    \item \textbf{Location:} Where is it?
+    \item \textbf{Reason:} Why?
+    \item \textbf{Identity:} Who?
+\end{itemize}
+
+\vspace{0.3cm}
+
+\textbf{Tips to Maximize Your Score:}
+\begin{itemize}
+    \item \textbf{Tip 1:} Look out for \textbf{WH-question words} such as:
+    \textit{who (people), what (object/action), when (time), why (reason), where (location)}.
+    \item \textbf{Tip 2:} Focus on \textbf{understanding the reason behind the speaker’s question} — not just the words.
+    \item \textbf{Tip 3:} Avoid choosing responses that simply \textbf{repeat words} from the question. They are often incorrect.
+    \item \textbf{Tip 4:} Listen for \textbf{intonation and context clues} to identify if the question is about time, place, or reason.
+\end{itemize}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{part2.png}
+    \caption{Part 2}
+    \label{fig:Part2}
+\end{figure}
+
+
+
+\section{Part 3 : Conversations [Questions 41–70]}
+
+\textbf{Description:}
+\begin{itemize}
+    \item In this part of the test, you will hear short \textbf{conversations between two or three people}.
+    \item You will be asked to answer \textbf{three questions} about each conversation.
+    \item Each question has \textbf{four answer choices (A, B, C, D)}.
+    \item Some questions focus on \textbf{specific details} mentioned in the conversation.
+    \item Others require you to \textbf{visualize the setting} and \textbf{identify who the speakers are}.
+\end{itemize}
+
+\vspace{0.3cm}
+
+\textbf{Self Questions to Help You:}
+\begin{itemize}
+    \item Who are the speakers?
+    \item Where are the speakers?
+    \item What is the conversation about?
+    \item What are they doing?
+    \item What is their relationship?
+\end{itemize}
+
+\vspace{0.3cm}
+
+\textbf{Tips to Maximize Your Score:}
+\begin{itemize}
+    \item \textbf{Tip 1:} Try to \textbf{read the questions before} listening to the conversation — this helps you know what information to listen for.
+    \item \textbf{Tip 2:} Pay attention to \textbf{context clues and vocabulary words} that reveal the setting:
+    \begin{itemize}
+        \item \textit{computer, e-mail, meeting, desk} $\Rightarrow$ the conversation likely takes place in an \textbf{office}.
+    \end{itemize}
+    \item \textbf{Tip 3:} Identify the \textbf{purpose of the conversation} (e.g., requesting information, scheduling, giving instructions).
+    \item \textbf{Tip 4:} Listen for \textbf{tone and attitude} to understand relationships between speakers (e.g., manager–employee, customer–service agent).
+\end{itemize}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{part3.png}
+    \caption{Part 3}
+    \label{fig:Part3}
+\end{figure}
+
+
+
+\section{Part 4 : Talks [Questions 71–100]}
+
+\textbf{Description:}
+\begin{itemize}
+    \item In this part of the test, you will hear a series of \textbf{short talks or monologues} given by a single speaker.
+    \item Each talk is followed by \textbf{three questions}, and each question has \textbf{four possible answers (A, B, C, D)}.
+    \item The talks cover everyday situations such as \textbf{announcements, news reports, public messages, or recorded instructions}.
+    \item Some questions focus on \textbf{specific details}, while others test your understanding of the \textbf{overall purpose or context}.
+\end{itemize}
+
+\vspace{0.3cm}
+
+\textbf{Self Questions to Help You:}
+\begin{itemize}
+    \item Who is speaking?
+    \item What is the purpose of the talk?
+    \item Where is the speaker?
+    \item Who is the intended audience?
+    \item What is the main idea or topic?
+\end{itemize}
+
+\vspace{0.3cm}
+
+\textbf{Tips to Maximize Your Score:}
+\begin{itemize}
+    \item \textbf{Tip 1:} \textbf{Read the questions before} listening to focus on key information.
+    \item \textbf{Tip 2:} Pay attention to \textbf{context clues} such as place names, job titles, or company names to identify the situation.
+    \item \textbf{Tip 3:} Listen for \textbf{signal words} that indicate the structure of the talk:
+    \begin{itemize}
+        \item \textit{First, next, finally} → sequence or procedure.
+        \item \textit{Because, due to} → reason or cause.
+        \item \textit{So, therefore} → conclusion or result.
+    \end{itemize}
+    \item \textbf{Tip 4:} Focus on \textbf{the speaker’s purpose}: to inform, to invite, to advertise, or to instruct.
+    \item \textbf{Tip 5:} Don’t worry if you miss a word — focus on the \textbf{general meaning} and \textbf{tone}.
+\end{itemize}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{part4.png}
+    \caption{Part 4}
+    \label{fig:part4}
+\end{figure}
+
+
+
+\section{Part 5 : Incomplete Sentences [Questions 101–130]}
+
+\textbf{Description:}
+\begin{itemize}
+    \item In this part of the test, you will read \textbf{incomplete sentences} with a missing word or phrase.
+    \item Each question has \textbf{four answer choices (A, B, C, D)}.
+    \item You must choose the word or phrase that \textbf{correctly completes the sentence} according to grammar and meaning.
+    \item This section tests your knowledge of \textbf{grammar}, \textbf{vocabulary}, and \textbf{collocations (word combinations)}.
+\end{itemize}
+
+\vspace{0.3cm}
+
+\textbf{Self Questions to Help You:}
+\begin{itemize}
+    \item What type of word is missing? (noun, verb, adjective, preposition…)
+    \item What tense or form fits grammatically?
+    \item Does the sentence test vocabulary or grammar?
+    \item Are there key words that indicate a specific grammatical rule?
+\end{itemize}
+
+\vspace{0.3cm}
+
+\textbf{Tips to Maximize Your Score:}
+\begin{itemize}
+    \item \textbf{Tip 1:} Read the entire sentence before looking at the options — understand the context first.
+    \item \textbf{Tip 2:} Identify \textbf{signal words} (e.g. “since”, “while”, “although”) that help determine tense or structure.
+    \item \textbf{Tip 3:} Be aware of common grammar traps:
+    \begin{itemize}
+        \item Verb tense consistency (e.g. has been / was / will be)
+        \item Prepositions (e.g. depend \textbf{on}, responsible \textbf{for})
+        \item Articles and quantifiers (e.g. a / an / the / some / any)
+    \end{itemize}
+    \item \textbf{Tip 4:} Learn common \textbf{TOEIC collocations}:  
+    \textit{meet a deadline, take responsibility, make a decision, provide information}.
+    \item \textbf{Tip 5:} Don’t overthink — if two options sound correct, choose the one that fits both \textbf{grammar and logic}.
+\end{itemize}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{part5.png}
+    \caption{Part 5}
+    \label{fig:part5}
+\end{figure}
+
+
+
+\section{Part 6 : Text Completion [Questions 131–146]}
+
+\textbf{Description:}
+\begin{itemize}
+    \item In this part of the test, you will read \textbf{short texts} such as e-mails, letters, or announcements with several blanks.
+    \item Each text contains \textbf{three or four blanks}, and for each blank, you must choose the best answer from \textbf{four options (A, B, C, D)}.
+    \item The correct answer depends on both \textbf{grammar} and \textbf{context}.
+    \item This section tests your ability to understand the \textbf{flow of ideas} and \textbf{logical connections} between sentences.
+\end{itemize}
+
+\vspace{0.3cm}
+
+\textbf{Self Questions to Help You:}
+\begin{itemize}
+    \item What type of text is this? (email, memo, notice, article…)
+    \item What is the main purpose of the text?
+    \item Does the blank need a word for grammar, vocabulary, or logic?
+    \item What connects the sentence before and after the blank?
+\end{itemize}
+
+\vspace{0.3cm}
+
+\textbf{Tips to Maximize Your Score:}
+\begin{itemize}
+    \item \textbf{Tip 1:} Read the entire text once to understand the general meaning \textbf{before filling in the blanks}.
+    \item \textbf{Tip 2:} Identify \textbf{transition words} and \textbf{connectors}:  
+    \textit{however, therefore, in addition, as a result, although}.
+    \item \textbf{Tip 3:} Pay attention to \textbf{pronouns and references} (e.g., “it”, “they”, “this”) that link sentences together.
+    \item \textbf{Tip 4:} Be careful with \textbf{verb tenses} — they must remain consistent within the same text.
+    \item \textbf{Tip 5:} For business-style texts, learn useful expressions such as:  
+    \textit{We are pleased to inform you…, Please be advised that…, Thank you for your cooperation.}
+    \item \textbf{Tip 6:} Eliminate options that change the meaning or tone of the message.
+\end{itemize}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{part6.png}
+    \caption{Part 6}
+    \label{fig:part6}
+\end{figure}
+
+
+
+\section{Part 7 : Reading Comprehension [Questions 147–200]}
+
+\textbf{Description:}
+\begin{itemize}
+    \item In this part of the test, you will read a variety of texts such as \textbf{articles, advertisements, e-mails, notices, forms, and reports}.
+    \item Each set of questions is based on a \textbf{single passage} or a set of \textbf{two or three related passages}.
+    \item You will answer \textbf{multiple-choice questions} about the content, purpose, and details of the texts.
+    \item This section tests your \textbf{reading speed}, \textbf{comprehension}, and \textbf{ability to infer information}.
+\end{itemize}
+
+\vspace{0.3cm}
+
+\textbf{Self Questions to Help You:}
+\begin{itemize}
+    \item What type of document is this? (email, announcement, article, schedule, form…)
+    \item Who wrote it and for whom?
+    \item What is the main purpose or topic?
+    \item What details or numbers are mentioned?
+    \item What can be inferred or implied (not directly said)?
+\end{itemize}
+
+\vspace{0.3cm}
+
+\textbf{Tips to Maximize Your Score:}
+\begin{itemize}
+    \item \textbf{Tip 1:} Skim the passage quickly to get the \textbf{main idea} before reading the questions.
+    \item \textbf{Tip 2:} Read the \textbf{questions first} — this helps you know what to look for in the text.
+    \item \textbf{Tip 3:} Use \textbf{keywords} from the question to locate information quickly.
+    \item \textbf{Tip 4:} Watch out for \textbf{paraphrasing}: the same idea may be expressed with different words.
+    \item \textbf{Tip 5:} Focus on the \textbf{logic of the passage}: cause → effect, problem → solution, request → response.
+    \item \textbf{Tip 6:} For double or triple passages:
+    \begin{itemize}
+        \item Identify the \textbf{relationship} between texts (e.g., email → reply, article → comment).
+        \item Answer questions that require \textbf{cross-referencing information}.
+    \end{itemize}
+    \item \textbf{Tip 7:} Manage your time: around \textbf{75 minutes for 54 questions}, so don’t get stuck — move on if unsure.
+\end{itemize}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\textwidth]{part7.png}
+    \caption{Part 7}
+    \label{fig:part7}
+\end{figure}
+
+
+
+
+
+\chapter{Tips for TOEIC}
+
+
+\section{Common Erros in Part 5}
+
+
+\renewcommand{\arraystretch}{1.4}
+\begin{longtable}{|p{6cm}|p{3cm}|p{6cm}|}
+\hline
+\textbf{Question} & \textbf{Best Answer} & \textbf{Explanation} \\
+\hline
+\endfirsthead
+
+\hline
+\textbf{Question} & \textbf{Best Answer} & \textbf{Explanation} \\
+\hline
+\endhead
+
+Aurora Furnishings is finding it difficult to make a profit in its \_\_\_\_ competitive market. 
+\newline \textbf{choices :} increases , increased , increasingly , increase 
+& increasingly 
+& We use the pattern: \textbf{adverb + adjective + noun}. \\
+\hline
+
+The maintenance team’s repair requests should be \_\_\_\_ in groups according to the urgency.
+\newline \textbf{choices :} organizing , organize , organized , organizes 
+& organized 
+& After \textbf{modal + be} (here “should be”), we use the \textbf{past participle} for passive structures. \\
+\hline
+
+Due to the high volume of foot traffic, the shop must polish its floors more \_\_\_\_ than usual during the peak season.
+\newline \textbf{choices :} frequent , frequented , frequency , frequently 
+& frequently 
+& We use an \textbf{adverb} to modify a verb, following the pattern: \textbf{verb + adverb}. \\
+\hline
+
+\_\_\_\_ the building has an excellent location and a modern interior, it is popular among visitors.
+\newline \textbf{choices : } In view of , Provided that , Other than , Seeing that
+& seeing that
+& \textbf{“Seeing that”} introduces a reason clause meaning \textbf{“since / because”}. \\
+\hline
+
+The landlord raised the monthly rent for the first time in several years, and \_\_\_\_ so.
+\newline \textbf{choices :} reasonable , reasonably , reason , reasons 
+& reasonably 
+& We use the pattern: \textbf{and + adverb + so}. \\
+\hline
+
+The green light on the side of the water purifier lights up \_\_\_\_ the filter needs to be replaced.
+\newline \textbf{choices :} likewise , whenever , therefore , whereas
+& whenever 
+& We use \textbf{“whenever”} to mean \textbf{“every time that”}. \\
+\hline
+
+The clerk said that \_\_\_\_ fifteen customers had been waiting outside the store for it to open.
+\newline \textbf{choices :} rougher , roughly , rough , roughness
+& roughly 
+& We use the pattern : \textbf{adverb + number + noun}. \\
+\hline
+
+The company plans on \_\_\_\_ the salespeople for the expenses they incurred while attending the conference.
+\newline \textbf{choices :} reimbursement , reimbursed , reimburse , reimbursing
+& reimbursing
+& We use the pattern : \textbf{plan on + V-ing}. \\
+\hline
+
+The heavy rains \_\_\_\_ problems for travelers if not for the intervention of the traffic police.
+\newline \textbf{choices :} will cause , would have caused , will have caused , can cause 
+& would have caused 
+& Pattern : \textbf{if not for + noun → Third conditional : would have + PP}. \\
+\hline
+
+Stir the flour into the batter as \_\_\_\_ as possible to prevent the dough from being lumpy.
+\newline \textbf{choices :} quickest , quick , quicker , quickly
+& quickly
+& Pattern : \textbf{as + adverb + as possible}. \\
+\hline
+
+
+The lecturer \_\_\_\_\_ on the country's struggle for independence when he gives his talk.
+\newline \textbf{choices :} has focused , is focused , will focus , focusing 
+& will focus 
+& Pattern : \textbf{Futur Simple +  when Prsent Simple}. \\
+\hline
+
+The manufacturing plant that was damaged in the typhoon should \_\_\_\_ its operations later this month.
+\newline \textbf{choices} : resumed , be resuming , had resumed , resuming 
+& be resuming 
+& After \textbf{should} there is always a base verb \\
+\hline 
+
+
+\end{longtable}
 
 
 
@@ -274,9 +2222,39 @@ She is \textbf{keen on learning} Python; she is \textbf{keen to learn} Python. \
 
 
 
+
 %========================
-\section{Vocabulaire \& collocations}
+% Vocabulaire  
 %========================
+
+\newpage 
+\begin{center}
+    {\Huge \textbf{Vocabulaire}}\\[6pt]
+    \hrule
+\end{center}
+
+\vspace{1em}
+
+
+%========================
+\chapter{Vocabulaire \& collocations}
+%========================
+
+
+
+
+\begin{itemize}
+  \item Personnel 
+  \item Offices 
+  \item Purchasing 
+  \item Dinning Out 
+  \item General Businnes 
+  \item Entertainment 
+  \item Manufacturing
+  \item Travel 
+\end{itemize}
+
+
 \begin{center}
 \begin{tabular}{@{}L{4.5cm} L{10cm}@{}}
 \toprule
@@ -316,40 +2294,102 @@ can't, won't, shouldn't, couldn't & \textit{We can't attend today.} \\
   \item \textbf{Moreover, in addition}: addition \;—\; \textit{Moreover, we reduced costs.}
 \end{itemize}
 
-%========================
-\section{Conseils d’examen \& stratégies}
-%========================
-\Tip{
-\textbf{Timing}: ne t’attarde pas — 1 question difficile = passe et reviens plus tard. \\
-\textbf{Listening}: anticipe le contexte (lieu, rôle, objectif) avant l’audio. \\
-\textbf{Reading}: lis d’abord les questions, puis le texte (gain de temps). \\
-\textbf{Grammaire}: repère les indices (prépositions fixes, structure des temps). \\
-\textbf{Vocabulaire}: privilégie collocations et expressions métiers.
-}
 
-\Warn{
-Évite de sur-analyser. Les distracteurs typiques au TOEIC : synonymes proches, négations cachées, dates/chiffres piégés.
-}
 
-%========================
-\section{Mini-fiches \& pièges classiques}
-%========================
-\begin{itemize}
-  \item \textbf{After / before / once / when} + présent simple pour futur proche.
-  \item \textbf{Depend on}, \textbf{insist on}, \textbf{apologize for}, \textbf{object to}.
-  \item \textbf{Few} (peu, négatif) vs \textbf{a few} (quelques, positif).
-  \item \textbf{Since} (point de départ) vs \textbf{for} (durée).
-\end{itemize}
+\section*{Vocabulary  - Dining out}
 
-% %========================
-% \section{Checklist de révision rapide}
-% %========================
-% \begin{itemize}
-%   \item[{\large $\square$}] 20 collocations métier révisées
-%   \item[{\large $\square$}] 15 connecteurs logiques maîtrisés
-%   \item[{\large $\square$}] 10 pièges de grammaire cochés
-%   \item[{\large $\square$}] 2 tests blancs chronométrés
-% \end{itemize}
+
+\begin{center}
+\renewcommand{\arraystretch}{1.4}
+\begin{tabular}{|p{3cm}|p{3cm}|p{8cm}|}
+\hline
+\textbf{Word / Expression} & \textbf{Traduction (FR)} & \textbf{Example Sentence} \\
+\hline
+parlor & salon / salle de réception & We had ice cream in a small parlor downtown. \\
+\hline
+staff & personnel / employés & The hotel staff were very friendly. \\
+\hline
+shape & forme / aspect & This table has a round shape. \\
+\hline
+the dough & la pâte & Knead the dough until it becomes soft. \\
+\hline
+in on the secret & au courant du secret & Only a few people are in on the secret. \\
+\hline
+apple pie & tarte aux pommes & I baked an apple pie for dessert. \\
+\hline
+cater & fournir / approvisionner en nourriture & They cater food for weddings and big events. \\
+\hline
+banquet & banquet / réception & The king invited us to a royal banquet. \\
+\hline
+tastes & goûts / préférences & Everyone has different tastes in music. \\
+\hline
+dietary & alimentaire / diététique & She follows strict dietary rules. \\
+\hline
+county & comté / département & He lives in Orange County, California. \\
+\hline
+a catering service & service de traiteur & We hired a catering service for the company party. \\
+\hline
+leisure & loisirs / temps libre & I read books in my leisure time. \\
+\hline
+excerpts & extraits / passages & The teacher read excerpts from the novel. \\
+\hline
+fall off & tomber de / décrocher / diminuer & The picture fell off the wall. \\
+\hline
+curtains & rideaux & She closed the curtains before going to bed. \\
+\hline
+ring & sonner / appeler & The phone rang early this morning. \\
+\hline
+fell asleep & s’est endormi & He fell asleep during the meeting. \\
+\hline
+\end{tabular}
+\end{center}
+
+% \begin{center}
+% \renewcommand{\arraystretch}{1.4}
+% \begin{tabular}{|p{3cm}|p{3cm}|p{8cm}|}
+% \hline
+% \textbf{Word / Expression} & \textbf{Arabic Translation} & \textbf{Example Sentence} \\
+% \hline
+% parlor & صالون / غرفة استقبال & We had ice cream in a small parlor downtown. \\
+% \hline
+% staff & الموظفون / العاملون & The hotel staff were very friendly. \\
+% \hline
+% shape & شكل / هيئة & This table has a round shape. \\
+% \hline
+% the dough & العجين & Knead the dough until it becomes soft. \\
+% \hline
+% in on the secret & مطلع على السر & Only a few people are in on the secret. \\
+% \hline
+% apple pie & فطيرة التفاح & I baked an apple pie for dessert. \\
+% \hline
+% cater & يقدم الطعام / يخدم & They cater food for weddings and big events. \\
+% \hline
+% banquet & مأدبة / وليمة & The king invited us to a royal banquet. \\
+% \hline
+% tastes & المذاقات / الأذواق & Everyone has different tastes in music. \\
+% \hline
+% dietary & غذائي / خاص بالنظام الغذائي & She follows strict dietary rules. \\
+% \hline
+% county & مقاطعة & He lives in Orange County, California. \\
+% \hline
+% a catering service & خدمة تقديم الطعام & We hired a catering service for the company party. \\
+% \hline
+% leisure & وقت الفراغ / الترفيه & I read books in my leisure time. \\
+% \hline
+% excerpts & مقتطفات / فقرات مختارة & The teacher read excerpts from the novel. \\
+% \hline
+% fall off & يسقط من / ينخفض & The picture fell off the wall. \\
+% \hline
+% curtains & الستائر & She closed the curtains before going to bed. \\
+% \hline
+% ring & يرنّ / يتصل & The phone rang early this morning. \\
+% \hline
+% fell asleep & غفا / نام & He fell asleep during the meeting. \\
+% \hline
+% \end{tabular}
+% \end{center}
+
+
 
 
 \vfill
